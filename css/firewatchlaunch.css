@@ -1,82 +1,3 @@
-/* RESET */
-a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:top}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
-a, a:link, a:visited { color: inherit; text-decoration: inherit; }
-
-/* GLOBAL */
-
-.section.internallinks, .section.internallinks * {
-	vertical-align: baseline;
-}
-
-
-
-html {
-	background-color: #210002;
-	color: #ffaf00;
-	font-family: 'Verlag A', 'Verlag B', "Verlag";
-	font-weight: 300;
-	font-style: normal;
-	text-align: center;
-	font-size: 20px;
-}
-
-.section {
-	color: #ffaf00;
-}
-
-p>a:link, p>a:visited {
-	color: #ec8200;
-	text-decoration: underline;
-	transition: color 0.2s;
-}
-p>a:hover {
-	color: #fff;
-
-}
-
-body {
-	position: relative;
-}
-body.subpage {
-	position: relative;
-}
-.subpage .toprule {
-	position: relative;
-}
-
-h1, h2, h3, h4 {
-	text-transform: uppercase;
-}
-
-s {
-	opacity: 0.8;
-	position: relative;
-	text-decoration: none;
-}
-s:before {
-	position: absolute;
-	content: "";
-	left: -3px;
-	top: 50%;
-	right: -3px;
-	border-top: 2px solid;
-	box-shadow: 0px 1px 1px #ffaf00;
-	border-color: #973700;
-	-webkit-transform: rotate(-4deg);
-	-moz-transform: rotate(-4deg);
-	-ms-transform: rotate(-4deg);
-	-o-transform: rotate(-4deg);
-	transform: rotate(-4deg);
-}
-
-
-/* MAGNIFIC OVERRIDE */
-
-.firewatch .mfp-image-holder .mfp-content {
-    max-width: 90%;
-}
-
-
 
 /* PARALLAX */
 
@@ -85,7 +6,7 @@ s:before {
 }
 
 #parallax {
-	display: none;
+	display: block;
 }
 #nonparallax {
 	display: block;
@@ -98,14 +19,15 @@ s:before {
 }
 
 .keyart_layer {
-	background-position: bottom center;
-	background-size: auto 1038px;
-	background-repeat: repeat-x;
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 	width: 100%;
-	position: absolute;
+	position: relative;
 }
 .keyart_layer.parallax {
-	position: fixed;
+	position: absolute;
 }
 	#keyart-0 {
 		background-image: url('../images/parallax/parallax0.png');
@@ -137,36 +59,7 @@ s:before {
 		opacity: 0;
 	}
 
-@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi){ 
-   	#keyart-0 {
-		background-image: url('../images/parallax/parallax0@2x.png');
-		background-color: #ffaf1b;
-	}
-	#keyart-1 {
-		background-image: url('../images/parallax/parallax1@2x.png');
-	}
-	#keyart-2 {
-		background-image: url('../images/parallax/parallax2@2x.png');
-	}
-	#keyart-3 {
-		background-image: url('../images/parallax/parallax3@2x.png');
-	}
-	#keyart-4 {
-		background-image: url('../images/parallax/parallax4@2x.png');
-	}
-	#keyart-5 {
-		background-image: url('../images/parallax/parallax5@2x.png');
-	}
-	#keyart-6 {
-		background-image: url('../images/parallax/parallax6@2x.png');
-	}
-	#keyart-7 {
-		background-image: url('../images/parallax/parallax7@2x.png');
-	}
-	#keyart-8 {
-		background-image: url('../images/parallax/parallax8@2x.png');
-	}
-}
+
 
 /********************/
 /********************/
@@ -185,30 +78,6 @@ s:before {
 
 }
 
-/*********************/
-/*********************/
-/* DISABLES PARALLAX */
-/*********************/
-/*********************/
-
-@media (max-width: 600px) {
-
-	#nonparallax {
-		display: block;
-	}
-	#parallax {
-		display: none;
-	}
-
-	#main {
-		padding-left: 10px;
-		padding-right: 10px;
-		padding-top: 70px;
-	}
-
-	}
-}
-
 /* PARALLAX */
 
 	.keyart, .keyart_layer {
@@ -217,7 +86,7 @@ s:before {
 
 	.keyart_layer {
 		position: absolute;
-		background-size: auto 600px;
+		background-size: auto auto;
 	}
 }
 
