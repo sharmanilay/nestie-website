@@ -43,11 +43,11 @@ body{
     background: #fff;
     position: relative;
 }
-
-.wrapper{
-    width: 1100px;
-    margin: 0 auto;
+.container-fluid {
+    padding: 0% 0% 0% 0%;
 }
+
+
 
 h1, h2, h3, h4, h5 ,h6{
     color: #626262;
@@ -85,15 +85,26 @@ h5, h6          { font-weight: bolder }
 /*    Billboard    */
 .billboard{
     width: 100%;
-    height: 690px;
+    height: auto;
     position: relative;
+    overflow: hidden;
 }
 video#bgVideo {
-  position: absolute; // Play the video in full screen mode
-  top: 50%;
-  left: 50%; 
-  z-index: -1; // Put the video behind all other elements
+  position:absolute;
+          left:50%;
+          width:auto;
+          height:auto;
+          z-index:-100;
+          -ms-transform: translateX(-50%) translateY(-50%);
+          -moz-transform: translateX(-50%) translateY(-50%);
+          -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+          background: url(../images/clouds.jpg) no-repeat;
+          background-size: cover; 
 }
+video {
+          display:block;
+        }
 
 @media only screen and (max-width: 768px) {
   video {
@@ -104,25 +115,6 @@ video#bgVideo {
   }
 }
 
-/*
-.billboard.light{
-    background: url('../img/image2.png') no-repeat;   
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-}
-
-.billboard .shadow{
-    position: absolute;
-    width: 100%;
-    height: 142px;
-    bottom: 0;
-    left: 0;
-    margin-bottom: -1px;
-    background: url('../img/shadow.png') repeat-x;
-}
-*/
 .billboard .caption{
     margin-top: 130px;
     text-align: center;
@@ -301,18 +293,19 @@ header.light nav ul li a:hover{
 
 /*    testimonials    */
 .testimonials{
-    margin-top: 100px;
+    padding: 1%;
+    background-color: #1b0000;
 }
 
 .testimonials ul{
     margin-top: 70px;
     list-style: none;
+    float: center;
 }
 
 .testimonials ul li{
-    display: block;
-    float: left;
-    margin-left: 80px;
+    display: inline-block;
+    float: center;
     width: 313px;
 }
 
@@ -511,3 +504,104 @@ footer nav ul li a{
 footer nav ul li a:hover{
     color: #616161;
 }
+
+/* PARALLAX */
+
+.keyart, .keyart_layer {
+	height: 1000px;
+}
+
+#parallax {
+	display: block;
+}
+#nonparallax {
+	display: block;
+}
+
+
+.keyart {
+	position: relative;
+	z-index: 10;
+}
+.keyart,.keyart_layer{
+    height: 100px;
+}
+
+.keyart_layer {
+    background-position: bottom center;
+    background-repeat: repeat-x;
+    background-size: auto 1038px;
+	width: 100%;
+    min-height: 100%:
+	position: fixed;
+}
+.keyart_layer.parallax {
+
+    background-position: center;
+    background-repeat: repeat-x;    
+    background-size: auto 1038px;
+	width: 100%;
+    min-height: 100%;
+	position: absolute;
+}
+	#keyart-0 {
+		background-image: url('../images/parallax/parallax0.png');
+		background-color: #4678bd;
+	}
+	#keyart-1 {
+		background-image: url('../images/parallax/parallax1.png');
+	}
+	#keyart-2 {
+		background-image: url('../images/parallax/parallax2.png');
+	}
+	#keyart-3 {
+		background-image: url('../images/parallax/parallax3.png');
+	}
+	#keyart-4 {
+		background-image: url('../images/parallax/parallax4.png');
+	}
+	#keyart-5 {
+		background-image: url('../images/parallax/parallax5.png');
+	}
+	#keyart-6 {
+		background-image: url('../images/parallax/parallax6.png');
+	}
+	#keyart-8 {
+		background-image: url('../images/parallax/parallax8.png');
+	}
+	#keyart-scrim {
+		background-color: #4678bd;
+		opacity: 0;
+	}
+
+
+
+/********************/
+/********************/
+/* ENABLES PARALLAX */
+/********************/
+/********************/
+
+@media (min-width: 601px) {
+
+	#nonparallax {
+		display: none;
+	}
+	#parallax {
+		display: block;
+	}
+
+}
+
+/* PARALLAX */
+
+	.keyart, .keyart_layer {
+		height: 550px;
+	}
+
+	.keyart_layer {
+		position: absolute;
+		background-size: auto auto;
+	}
+}
+
