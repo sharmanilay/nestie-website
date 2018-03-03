@@ -30,28 +30,28 @@ $(document).ready(function(){
 
 function castParallax() {
 
-	var opThresh = 700;
+	var opThresh = 400;
 	var opFactor = 750;
 
 
 	$(window).scroll(function(){
-		var windowScroll = 
+		var windowScroll = this.pageYOffset - 1050;
 		
 		$('.keyart_layer.parallax').each(function(){
 			var $layer = $(this);
-			var yPos = -(windowScroll * $layer.data('speed') / 750);
+			var yPos = -(windowScroll * $layer.data('speed') / 100);
 			$layer.css({
 				"transform" : "translate3d(0px, " + yPos + "px, 0px)"
 			});
 
 		});
-		var backgroundOpacity = (windowScroll > opThresh ? (windowScroll - opThresh) / opFactor : 0);
-		$('#keyart-scrim').css('opacity', backgroundOpacity);
+		/*var backgroundOpacity = (windowScroll > opThresh ? (windowScroll - opThresh) / opFactor : 0);
+		$('#keyart-scrim').css('opacity', backgroundOpacity);*/
 	});
 
 
 	window.addEventListener("scroll", function(event){
-		var top = this.pageYOffset -400;
+		var top = this.pageYOffset -1050;
 
 		var layers = document.getElementsByClassName("parallax");
 		var layer, speed, yPos;
@@ -59,7 +59,7 @@ function castParallax() {
 			for (var i = 0; i < layers.length; i++) {
 				layer = layers[i];
 				speed = layer.getAttribute('data-speed');
-				var yPos = -(top * speed / 700);
+				var yPos = -(top * speed / 100);
 				layer.setAttribute('style', 'transform: translate3d(0px, ' + yPos + 'px, 0px)');
 			}	
 		}else{
@@ -78,7 +78,7 @@ function dispelParallax() {
 function castSmoothScroll() {
 	$.srSmoothscroll({
 		step: 80,
-		speed: 300,
+		speed: 100,
 		ease: 'linear'
 	});
 }

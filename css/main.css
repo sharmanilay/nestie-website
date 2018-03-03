@@ -115,6 +115,8 @@ video {
   }
 }
 
+
+
 .billboard .caption{
     margin-top: 130px;
     text-align: center;
@@ -129,11 +131,15 @@ video {
     font-family: "raleway-bold";
     font-size: 50px;
     font-weight: bold; 
-    margin-bottom: 30px;
 }
 
 .billboard .caption.light h1{
     color: #fff;
+}
+.billboard .caption.light h3{
+    font-family: "raleway-bold";
+    font-size: 2vh;
+    float: left;
 }
 
 .billboard .caption p{
@@ -213,18 +219,15 @@ header.light nav ul li a:hover{
 
 
 
-/*    Services    */
-.services ul{
-    margin-top: 100px;
+/*Listen Power Connect Section */
+.services{
+    margin-top: 2vh;
 }
 
-.services ul li{
-    list-style: none;
-    display: block;
-    width: 313px;
-    float: left;
-    margin-left: 80px;
-    text-align: center;
+.services, .col-lg-4{
+  padding-left: 6%;
+  padding-right: 6%;
+  text-align: center;
 }
 
 .services ul li:first-child{
@@ -288,11 +291,114 @@ header.light nav ul li a:hover{
     border: 0!important;
 }
 
+/*Listen Power Connect Section  Ends*/
+/* PARALLAX */
+
+.keyart, .keyart_layer {
+	height: 1000px;
+}
+
+#parallax {
+	display: block;
+}
+#nonparallax {
+	display: block;
+}
+
+
+.keyart {
+	position: relative;
+	z-index: -10;
+}
+.keyart,.keyart_layer{
+    height: 100px;
+}
+
+.keyart_layer {
+    background-position: bottom center;
+    background-repeat: repeat-x;
+    background-size: auto 1038px;
+	width: 100%;
+    min-height: 100%:
+	position: fixed;
+}
+.keyart_layer.parallax {
+
+    background-position: center;
+    background-repeat: repeat-x;    
+    background-size: auto 1038px;
+	width: 100%;
+    min-height: 100%;
+	position: absolute;
+}
+	#keyart-0 {
+		background-image: url('../images/parallax/parallax0.png');
+		background-color: #ff5249;
+	}
+	#keyart-1 {
+		background-image: url('../images/parallax/parallax1.png');
+	}
+	#keyart-2 {
+		background-image: url('../images/parallax/parallax2.png');
+	}
+	#keyart-3 {
+		background-image: url('../images/parallax/parallax3.png');
+	}
+	#keyart-4 {
+		background-image: url('../images/parallax/parallax4.png');
+	}
+	#keyart-5 {
+		background-image: url('../images/parallax/parallax5.png');
+	}
+	#keyart-6 {
+		background-image: url('../images/parallax/parallax6.png');
+	}
+	#keyart-8 {
+		background-image: url('../images/parallax/parallax8.png');
+	}
+	#keyart-scrim {
+		background-color: #1B0000;
+		opacity: 0;
+	}
+
+
+
+/********************/
+/********************/
+/* ENABLES PARALLAX */
+/********************/
+/********************/
+
+@media (min-width: 601px) {
+
+	#nonparallax {
+		display: none;
+	}
+	#parallax {
+		display: block;
+	}
+
+}
+
+/* PARALLAX */
+
+	.keyart, .keyart_layer {
+		height: 700px;
+	}
+
+	.keyart_layer {
+		position: absolute;
+		background-size: auto auto;
+	}
+/*End Parallax*/
+
+
 
 
 
 /*    testimonials    */
 .testimonials{
+    z-index: 2000;
     padding: 1%;
     background-color: #1b0000;
 }
@@ -503,105 +609,5 @@ footer nav ul li a{
 
 footer nav ul li a:hover{
     color: #616161;
-}
-
-/* PARALLAX */
-
-.keyart, .keyart_layer {
-	height: 1000px;
-}
-
-#parallax {
-	display: block;
-}
-#nonparallax {
-	display: block;
-}
-
-
-.keyart {
-	position: relative;
-	z-index: 10;
-}
-.keyart,.keyart_layer{
-    height: 100px;
-}
-
-.keyart_layer {
-    background-position: bottom center;
-    background-repeat: repeat-x;
-    background-size: auto 1038px;
-	width: 100%;
-    min-height: 100%:
-	position: fixed;
-}
-.keyart_layer.parallax {
-
-    background-position: center;
-    background-repeat: repeat-x;    
-    background-size: auto 1038px;
-	width: 100%;
-    min-height: 100%;
-	position: absolute;
-}
-	#keyart-0 {
-		background-image: url('../images/parallax/parallax0.png');
-		background-color: #ff5249;
-	}
-	#keyart-1 {
-		background-image: url('../images/parallax/parallax1.png');
-	}
-	#keyart-2 {
-		background-image: url('../images/parallax/parallax2.png');
-	}
-	#keyart-3 {
-		background-image: url('../images/parallax/parallax3.png');
-	}
-	#keyart-4 {
-		background-image: url('../images/parallax/parallax4.png');
-	}
-	#keyart-5 {
-		background-image: url('../images/parallax/parallax5.png');
-	}
-	#keyart-6 {
-		background-image: url('../images/parallax/parallax6.png');
-	}
-	#keyart-8 {
-		background-image: url('../images/parallax/parallax8.png');
-	}
-	#keyart-scrim {
-		background-color: #ff5249;
-		opacity: 0;
-	}
-
-
-
-/********************/
-/********************/
-/* ENABLES PARALLAX */
-/********************/
-/********************/
-
-@media (min-width: 601px) {
-
-	#nonparallax {
-		display: none;
-	}
-	#parallax {
-		display: block;
-	}
-
-}
-
-/* PARALLAX */
-
-	.keyart, .keyart_layer {
-		height: 550px;
-	}
-
-	.keyart_layer {
-		position: absolute;
-		background-size: auto auto;
-	}
 }
 
