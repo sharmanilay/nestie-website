@@ -30,38 +30,36 @@ $(document).ready(function(){
 
 function castParallax() {
 
-	var opThresh = 350;
+	var opThresh = 700;
 	var opFactor = 750;
 
-/*
+
 	$(window).scroll(function(){
-		var windowScroll = $(window).scrollTop();
+		var windowScroll = 
 		
 		$('.keyart_layer.parallax').each(function(){
 			var $layer = $(this);
-			var yPos = -(windowScroll * $layer.data('speed') / 100);
+			var yPos = -(windowScroll * $layer.data('speed') / 750);
 			$layer.css({
 				"transform" : "translate3d(0px, " + yPos + "px, 0px)"
 			});
 
 		});
-
-
 		var backgroundOpacity = (windowScroll > opThresh ? (windowScroll - opThresh) / opFactor : 0);
 		$('#keyart-scrim').css('opacity', backgroundOpacity);
 	});
 
-*/
+
 	window.addEventListener("scroll", function(event){
-		var top = this.pageYOffset;
+		var top = this.pageYOffset -400;
 
 		var layers = document.getElementsByClassName("parallax");
 		var layer, speed, yPos;
-		 if(window.pageYOffset>600){
+		 if(window.pageYOffset>400){
 			for (var i = 0; i < layers.length; i++) {
 				layer = layers[i];
 				speed = layer.getAttribute('data-speed');
-				var yPos = -(top * speed / 800);
+				var yPos = -(top * speed / 700);
 				layer.setAttribute('style', 'transform: translate3d(0px, ' + yPos + 'px, 0px)');
 			}	
 		}else{
