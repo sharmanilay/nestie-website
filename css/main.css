@@ -546,7 +546,7 @@ footer nav ul li a:hover{
 }
 	#keyart-0 {
 		background-image: url('../images/parallax/parallax0.png');
-		background-color: #4678bd;
+		background-color: #ff5249;
 	}
 	#keyart-1 {
 		background-image: url('../images/parallax/parallax1.png');
@@ -570,7 +570,7 @@ footer nav ul li a:hover{
 		background-image: url('../images/parallax/parallax8.png');
 	}
 	#keyart-scrim {
-		background-color: #4678bd;
+		background-color: #ff5249;
 		opacity: 0;
 	}
 
