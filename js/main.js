@@ -1,5 +1,12 @@
 $(document).ready(function(){
 
+	//parallax init
+	startSite();
+	
+
+	// mulitscroll.js init
+	$('#multiscroll').multiscroll();
+
 	//fancybox.js init
 	$('.fancybox').fancybox({
 		openEffect : 'none',
@@ -110,5 +117,3 @@ function startSite() {
 	}
 
 }
-
-document.body.onload = startSite();
