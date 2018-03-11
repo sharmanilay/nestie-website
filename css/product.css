@@ -2,4 +2,8 @@
 .earphones{
     background-image: url('../img/products/earphones.png');
     background-size: cover;
+    background-color: #d61233;
+}
+.earphones-description{
+    background-color: #d61233;
 }

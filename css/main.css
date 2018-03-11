@@ -82,13 +82,7 @@ h5, h6          { font-weight: bolder }
 
 
 
-/*    Billboard    */
-.billboard{
-    width: 100%;
-    height: auto;
-    position: relative;
-    overflow: hidden;
-}
+
 video#bgVideo {
   position:absolute;
           left:50%;
@@ -115,180 +109,21 @@ video {
   }
 }
 
-
-
-.billboard .caption{
-    margin-top: 130px;
-    text-align: center;
+/*Navigation Bar*/
+.collapse{
+  float: right;
 }
-
-.billboard .caption.light{
-    color: #fff;
-}
-
-
-.billboard .caption h1{
-    font-family: "raleway-bold";
-    font-size: 50px;
-    font-weight: bold; 
-}
-
-.billboard .caption.light h1{
-    color: #fff;
-}
-.billboard .caption.light h3{
-    font-family: "raleway-bold";
-    font-size: 2vh;
-    float: left;
-}
-
-.billboard .caption p{
-    font-family: "raleway-regular";
-    font-size: 18px;
-    margin-bottom: 30px;
-}
-
-.billboard .caption.light p{
-    color: #fff;
-}
-
-.billboard .caption hr{
-    display: inline-block;
-    height: 1px;
-    width: 30px;
-    border: 0!important;   
-    margin: 0;
-    padding: 0;
-}
-
-.billboard .caption.light hr{
-    background: #fff;
-}
-
-
-
-
-
-/*    header    */
-header{
-    width: 100%;
-    height: 125px;
-}
-
-header .logo{
-    float: left;
-    margin-top: 50px;
-}
-
-header nav{
-    float: right;
-    margin-top: 57px;
-}
-
-
-header nav ul li{
-    list-style: none;
-    display: block;
-    float: left;
-    margin-left: 50px;
-}
-
-header nav ul li a{
-    text-decoration: none;  
-    font-family: "raleway-regular";
-    font-size: 14px;
-
-    transition:all .2s linear;
-    -webkit-transition:all .2s linear;
-    -moz-transition:all .2s linear;
-    -o-transition:all .2s linear;
-}
-
-header.light nav ul li a{  
-    color: #fff;
-}
-
-header.light nav ul li a:hover{
-    color: #B9B9B9;
-}
-
-
-
-
+/*Navigation Bar Ends*/
 
 
 
 
 /*Listen Power Connect Section */
-.services{
-    margin-top: 2vh;
-}
 
-.services, .col-lg-4{
+.col-lg-4{
   padding-left: 6%;
   padding-right: 6%;
   text-align: center;
-}
-
-.services ul li:first-child{
-    margin-left: 0;
-}
-
-.services ul li .separator{
-    display: block;
-    width: 1px;
-    height: 20px;
-    background: #f6f6f6;
-    margin: 20px auto;
-}
-
-.services ul li h2{
-    color: #616161;
-    font-family: "raleway-bold";
-    font-size: 18px;
-    font-weight: bold;
-    margin: 0;
-}
-
-.services ul li p{
-   color: #838181;
-    font-family: "raleway-regular";
-    font-size: 14px;
-    line-height: 28px; 
-    margin-top: 40px;
-    letter-spacing: .5px;
-}
-
-.title{
-    text-align: center;
-    overflow: hidden;
-}
-
-.title h2{
-    color: #616161;
-    font-family: "raleway-bold";
-    font-size: 30px;
-    font-weight: bold;
-    margin: 0 0 20px 0;
-    text-transform: uppercase;
-}
-
-.title h3{
-    color: #9b9b9b;
-    font-family: "raleway-regular";
-    font-size: 14px;
-    margin: 0 0 20px 0;
-    font-weight: normal!important;
-}
-
-.title hr.separator{
-    display: block;
-    width: 40px;
-    height: 1px;
-    background-color: #ebebeb;
-    margin: 0 auto;
-    padding: 0;
-    border: 0!important;
 }
 
 /*Listen Power Connect Section  Ends*/
@@ -478,80 +313,94 @@ header.light nav ul li a:hover{
     font-weight: normal;
 }
 
-
-
-
-
-
-
-/*    blog posts    */
-.blog_posts{
-    margin-top: 100px;
-    padding: 100px 0;
-    background: #fafafa;
+/*Featured Products*/
+.fproducts{
+    z-index: 2000;
+    padding: 1%;
+    background-color: #fafffa;
+    align-content: center;
+    text-align: center;
+}
+.fproducts h1{
+    align-content: center;
 }
 
-.blog_posts ul{
-    list-style: none;
+.fproducts ul{
     margin-top: 70px;
+    list-style: none;
+    float: center;
 }
 
-.blog_posts ul li{
-    display: block;
-    width: 230px;
-    margin-left: 60px;
-    float: left;
+.fproducts ul li{
+    display: inline-block;
+    float: center;
+    width: 313px;
 }
 
-.blog_posts ul li:first-child{
+.testimonials ul li:first-child{
     margin-left: 0;
 }
 
-.blog_posts ul li .media .date{
-    position: absolute;
-    top: 0;
-    left: 30px;
-    width: 40px;
-    padding: 10px 0;
-    background: rgba(62, 62, 62, .7);
-    text-align: center;
+.fproducts ul li .quotes{
+    margin-right: 10px;
 }
 
-.blog_posts ul li .media .date span{
-    display: block;
-}
-
-.blog_posts ul li .media .date .day{
-    color: #fff;
-    font-family: "raleway-bold";
-    font-size: 18px;
-    font-weight: bold;
-
-}
-
-.blog_posts ul li .media .date .month{
-    color: #fff;
+.fproducts ul li p{
+    color: #838181;
     font-family: "raleway-regular";
-    font-size: 12px;
-}
-
-.blog_posts ul li .media{
-    width: 230px;
-    height: 230px;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: .5px;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ecebeb;
     position: relative;
 }
 
-.blog_posts ul li h1{
-    color: #616161;
-    font-family: "raleway-regular";
-    font-size: 16px;
-    font-weight: normal;
-    line-height: 26px;
-    margin: 20px 0 0 0;
+.fproducts ul li p .triangle{
+    display: block;
+    width: 10px;
+    height: 5px;
+    background: url('../img/testimonial_triangle.png') no-repeat;
+    position: absolute;
+    bottom: -5px;
+    left: 40px;
 }
 
+.fproducts ul li .client{
+    margin-left: 20px;
+}
 
+.fproducts ul li .client img.avatar{
+    float: left;
+    margin-right: 20px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -o-border-radius: 100px;
+    border-radius: 100px;
+}
 
+.fproducts ul li .client .client_details{
+    float: left;
+}
+
+.fproducts ul li .client .client_details h4{
+    color: #7b7979;
+    font-family: "raleway-semibold";
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+}
+
+.fproducts ul li .client .client_details h5{
+    color: #7b7979;
+    font-family: "raleway-regular";
+    font-size: 12px;
+    margin: 0;
+    font-weight: normal;
+}
+
+/*Featured Products Ends*/
 
 
 
