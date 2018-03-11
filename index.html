@@ -5,8 +5,8 @@
 	<meta charset="utf-8">
 	<meta name="author" content="pixelhint.com">
 	<meta name="description" content="Powerbanks"/>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> 
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/fancybox-thumbs.css">
 	<link rel="stylesheet" type="text/css" href="css/fancybox-buttons.css">
@@ -14,6 +14,9 @@
 	<link rel="stylesheet" type="text/css" href="css/animate.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/fancybox.js"></script>
     <script type="text/javascript" src="js/fancybox-buttons.js"></script>
@@ -24,64 +27,49 @@
 </head>
 <body>
 
-	<div class="container-fluid">
-			<section class="billboard light">
-				<header class="wrapper light">
-						<a href="#"><img class="logo" src="img/nesty_logo.png" alt=""/></a>
-						<video id="bgVideo" autoplay mute loop>
-						<source src="./img/Phoenix_Reveal.mp4" type="video/mp4">
-						</video>
-					<nav>
-						<ul>
-							<li><a href="">About Us</a></li>
-							<li><a href="">Products</a></li>
-							<li><a href="">Gallery</a></li>
-							<li><a href="">Services</a></li>
-							<li><a href="">Contact Us</a></li>
-						</ul>
+			<div>
+				<div>
+					<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+					  <a class="navbar-brand" href="#">Nesty</a>
+					  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					    <span class="navbar-toggler-icon"></span>
+					  </button>
+
+					  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+					    <ul class="navbar-nav mr-auto">
+					      <li class="nav-item">
+					        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+					      </li>
+					      <li class="nav-item">
+					        <a class="nav-link" href="#">Link</a>
+					      </li>
+					         
+					    </ul>
+					 
+					  </div>
 					</nav>
-				</header>
-				
+				</div>	
+				<div class="container-fluid">
+					<video id="bgVideo" autoplay mute loop>
+					<source src="./img/Phoenix_Reveal.mp4" type="video/mp4">
+					</video>
 				<div class="caption light animated wow fadeInDown clearfix">
 					<div class="row">
 							<div class="col-lg-4 animated wow fadeInDown" ></div>
 							<div class="col-lg-4 animated wow fadeInDown" >
 							<h1>NESTY</h1>
-							<h3>feels like flying</h3>
-							<p>Sometimes it feels like a storm, sometimes it feels like a breeze. We cannot decide the weather for you but our products ensure that you carry your own weather/mausam wherever you go. Your sky is always sunny and clear to 
-									fly with Nestie.
-									</p>
+							<h>feels like flying</h>
+							<p>Sometimes it feels like a storm, sometimes it feels like a breeze.
+							   We cannot decide the weather for you but our products ensure that you carry your own weather/mausam wherever you go.
+							   Your sky is always sunny and clear to 
+							fly with Nestie.
+							</p>
 							<hr>
 							</div>
 					</div>
 				</div>
 
 				<div class="shadow"></div>
-			</section><!--  End billboard  -->
-
-
-			<section class="services wrapper">
-				<div class="row clearfix">
-						<div class="col-lg-4 animated wow fadeInDown" >
-							<img class="img-circle" src="img/listen.png" alt="Generic placeholder image" width="140" height="140">
-						  <h2>Listen</h2>
-						  <p>Our range of earphones and bluetooth speakers will take your playlist to the next level and define the new sound of music.</p>
-						  <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-						</div>
-						<div class="col-lg-4 animated wow fadeInDown" data-wow-delay=".2s">
-							<img class="img-circle" src="img/power.png" alt="Generic placeholder image" width="140" height="140">
-						  <h2>Power</h2>
-						  <p>Let our range of power banks take care of your charging so that the fun never stops for you.</p>
-						  <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-						</div>
-						<div class="col-lg-4 animated wow fadeInDown" data-wow-delay=".4s">
-							<img class="img-circle" src="img/connect.png" alt="Generic placeholder image" width="140" height="140">
-						  <h2>Connect</h2>
-						  <p>Our wall chargers and cables keep your devices up and running while you are on the go. Must-haves</p>
-						  <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-						</div>
-				</div>
-			</section><!--  End services  -->
 
 
 			<section>
@@ -100,11 +88,7 @@
 
 		
 			<section class="testimonials wrapper">
-				<div class="title animated wow fadeIn">
-					<h2>Featured Products</h2>
-					
-					<hr class="separator"/>
-				</div>
+			
 				<div class="row clearfix">
 						<div class="col-lg-4 animated wow fadeInDown" >
 							<img class="img-circle" src="img/listen.png" alt="Generic placeholder image" width="140" height="140">
@@ -128,6 +112,34 @@
 
 				
 			</section><!--  End testimonials  -->
+			<section class="fproducts wrapper">
+					<div class="row clearfix animated wow fadeInDown">
+						<h1>Featured Products</h1>
+						<hr class="seperator">
+					</div>
+			
+					<div class="row clearfix">
+							<div class="col-lg-4 animated wow fadeInDown" >
+								<img class="img-circle" src="img/products/earphones.png" alt="Generic placeholder image" width="140" height="140">
+							  <h2>Black Earphones</h2>
+							  <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+							</div>
+							<div class="col-lg-4 animated wow fadeInDown" data-wow-delay=".2s">
+								<img class="img-circle" src="img/power.png" alt="Generic placeholder image" width="140" height="140">
+							  <h2>Power</h2>
+							  <p>Let our range of power banks take care of your charging so that the fun never stops for you.</p>
+							  <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+							</div>
+							<div class="col-lg-4 animated wow fadeInDown" data-wow-delay=".4s">
+								<img class="img-circle" src="img/connect.png" alt="Generic placeholder image" width="140" height="140">
+							  <h2>Connect</h2>
+							  <p>Our wall chargers and cables keep your devices up and running while you are on the go. Must-haves</p>
+							  <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+							</div>
+					</div>
+	
+					
+				</section><!--  End testimonials  -->
 
 
 			
