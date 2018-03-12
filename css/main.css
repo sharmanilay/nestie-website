@@ -45,6 +45,7 @@ body{
 }
 .container-fluid {
     padding: 0% 0% 0% 0%;
+    position: relative !important;
 }
 
 
@@ -77,27 +78,40 @@ h5, h6          { font-weight: bolder }
 }
 
 
+/*Navigation Bar*/
+.nav{
+  padding: 10px 2px 10px 2px;
+}
+.navbar-cont{
+  margin-bottom: 10px !important;
+}
+.nav, ul{
+  float: right;
+}
+/*Navigation Bar Ends*/
 
 
 
 
+.video{
+  top: 50px !important;
+}
 
 
 video#bgVideo {
-  position:absolute;
+          position:relative;
           left:50%;
-          width:auto;
-          height:auto;
+          width:100%;
+          height:100% !important;
           z-index:-100;
           -ms-transform: translateX(-50%) translateY(-50%);
           -moz-transform: translateX(-50%) translateY(-50%);
           -webkit-transform: translateX(-50%) translateY(-50%);
           transform: translateX(-50%) translateY(-50%);
-          background: url(../images/clouds.jpg) no-repeat;
-          background-size: cover; 
 }
 video {
-          display:block;
+          margin-top: 10%;
+          display:inline;
         }
 
 @media only screen and (max-width: 768px) {
@@ -108,12 +122,6 @@ video {
     background-image:url(“https://static.pexels.com/photos/134/light-creative-abstract-colorful.jpg”);
   }
 }
-
-/*Navigation Bar*/
-.nav, ul{
-  float: right;
-}
-/*Navigation Bar Ends*/
 
 
 
@@ -312,6 +320,92 @@ video {
 }
 
 /*Featured Products*/
+.col-centered {
+    float: none;
+    margin: 0 auto;
+}
+
+.carousel-control { 
+    width: 8%;
+    width: 0px;
+}
+.carousel-control.left,
+.carousel-control.right { 
+    margin-right: 40px;
+    margin-left: 32px; 
+    background-image: none;
+    opacity: 1;
+}
+.carousel-control > a > span {
+    color: white;
+    font-size: 29px !important;
+}
+
+.carousel-col { 
+    position: relative; 
+    min-height: 1px; 
+    padding: 5px; 
+    float: left;
+ }
+
+ .active > div { display:none; }
+ .active > div:first-child { display:block; }
+
+/*xs*/
+@media (max-width: 767px) {
+  .carousel-inner .active.left { left: -50%; }
+  .carousel-inner .active.right { left: 50%; }
+  .carousel-inner .next        { left:  50%; }
+  .carousel-inner .prev        { left: -50%; }
+  .carousel-col                { width: 50%; }
+  .active > div:first-child + div { display:block; }
+}
+
+/*sm*/
+@media (min-width: 768px) and (max-width: 991px) {
+  .carousel-inner .active.left { left: -50%; }
+  .carousel-inner .active.right { left: 50%; }
+  .carousel-inner .next        { left:  50%; }
+  .carousel-inner .prev        { left: -50%; }
+  .carousel-col                { width: 50%; }
+  .active > div:first-child + div { display:block; }
+}
+
+/*md*/
+@media (min-width: 992px) and (max-width: 1199px) {
+  .carousel-inner .active.left { left: -33%; }
+  .carousel-inner .active.right { left: 33%; }
+  .carousel-inner .next        { left:  33%; }
+  .carousel-inner .prev        { left: -33%; }
+  .carousel-col                { width: 33%; }
+  .active > div:first-child + div { display:block; }
+  .active > div:first-child + div + div { display:block; }
+}
+
+/*lg*/
+@media (min-width: 1200px) {
+  .carousel-inner .active.left { left: -25%; }
+  .carousel-inner .active.right{ left:  25%; }
+  .carousel-inner .next        { left:  25%; }
+  .carousel-inner .prev        { left: -25%; }
+  .carousel-col                { width: 25%; }
+  .active > div:first-child + div { display:block; }
+  .active > div:first-child + div + div { display:block; }
+  .active > div:first-child + div + div + div { display:block; }
+}
+
+.block {
+  width: 306px;
+  height: 230px;
+}
+
+.red {background: red;}
+
+.blue {background: blue;}
+
+.green {background: green;}
+
+.yellow {background: yellow;}
 .fproducts{
     z-index: 2000;
     padding: 1%;
@@ -408,8 +502,12 @@ footer{
     padding: 35px 0;
     padding-right: 35px;
     margin: 0;
-    overflow: hidden;
     background-color: #252727;
+    position: fixed bottom center;
+    left: 0;
+    right: 0;
+    bottom: 0px !important;
+    height: auto;
 }
 
 footer .footer_logo{
@@ -459,4 +557,6 @@ footer nav ul li a{
 footer nav ul li a:hover{
     color: #616161;
 }
-
+.footer-content{
+  text-align: center;
+}

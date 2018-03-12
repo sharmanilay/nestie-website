@@ -27,9 +27,10 @@
 </head>
 <body>
 
-			<div class="container-fluid"> 
+			<div class="container-fluid">
+					<section class="navbar-cont"> 
 						<div>
-					<nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: #110f07;">
+							<nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: #110f07;margin-bottom: 10px;">
 					  <a class="navbar-brand" href="#">Nesty</a>
 					  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 					    <span class="navbar-toggler-icon"></span>
@@ -52,24 +53,19 @@
 					    </ul>
 					 
 					  </div>
-					</nav>
 
-						</div>	
-							<video id="bgVideo" autoplay mute loop style="width: 100% height: auto;">
-							<source src="./img/Phoenix_Reveal.mp4" type="video/mp4">
-							</video>
+							</nav>
+						</div>
+					</section>
+					
+					<section>
+
 						<div class="caption light animated wow fadeInDown clearfix">
 							<div class="row">
 									<div class="col-lg-4 animated wow fadeInDown" ></div>
 									<div class="col-lg-4 animated wow fadeInDown" >
 									<h1>NESTY</h1>
-									<h>feels like flying</h>
-									<p>Sometimes it feels like a storm, sometimes it feels like a breeze.
-									   We cannot decide the weather for you but our products ensure that you carry your own weather/mausam 		wherever you go.		
-									   Your sky is alwa		ys sunny and clear to 		
-									fly with Nestie.		
-									</p>		
-											
+									<h>feels like flying</h>	
 									</div>
 
            
@@ -77,6 +73,12 @@
 						</div>
 
 						<div class="shadow"></div>
+					</section>
+					<section class="video">	
+							<video id="bgVideo" autoplay mute loop style="width: 100% height: auto;">
+							<source src="./img/Phoenix_Reveal.mp4" type="video/mp4">
+							</video>
+					</section>
 
 				<section class="testimonials wrapper">
 			
@@ -118,30 +120,52 @@
 	
 			
 				<section class="fproducts wrapper">
-					<div class="row clearfix animated wow fadeInDown">
-						<h1>Featured Products</h1>
-						<hr class="seperator">
-					</div>
-			
-					<div class="row clearfix">
-							<div class="col-lg-4 animated wow fadeInDown" >
-								<img class="img-circle" src="img/products/earphones.png" alt="Generic placeholder image" width="140" height="140">
-							  <h2>Black Earphones</h2>
-							  <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-							</div>
-							<div class="col-lg-4 animated wow fadeInDown" data-wow-delay=".2s">
-								<img class="img-circle" src="img/power.png" alt="Generic placeholder image" width="140" height="140">
-							  <h2>Power</h2>
-							  <p>Let our range of power banks take care of your charging so that the fun never stops for you.</p>
-							  <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-							</div>
-							<div class="col-lg-4 animated wow fadeInDown" data-wow-delay=".4s">
-								<img class="img-circle" src="img/connect.png" alt="Generic placeholder image" width="140" height="140">
-							  <h2>Connect</h2>
-							  <p>Our wall chargers and cables keep your devices up and running while you are on the go. Must-haves</p>
-							  <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-							</div>
-					</div>	
+									<div class="container">
+										<div class="row">
+											<div class="col-xs-11 col-md-10 col-centered">
+
+												<div id="carousel" class="carousel slide" data-ride="carousel" data-type="multi" data-interval="2500">
+													<div class="carousel-inner">
+														<div class="item active">
+															<div class="carousel-col">
+																<div class="block red img-responsive"></div>
+															</div>
+														</div>
+														<div class="item">
+															<div class="carousel-col">
+																<div class="block green img-responsive"></div>
+															</div>
+														</div>
+														<div class="item">
+															<div class="carousel-col">
+																<div class="block blue img-responsive"></div>
+															</div>
+														</div>
+														<div class="item">
+															<div class="carousel-col">
+																<div class="block yellow img-responsive"></div>
+															</div>
+														</div>
+													</div>
+
+													<!-- Controls -->
+													<div class="left carousel-control">
+														<a href="#carousel" role="button" data-slide="prev">
+															<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+															<span class="sr-only">Previous</span>
+														</a>
+													</div>
+													<div class="right carousel-control">
+														<a href="#carousel" role="button" data-slide="next">
+															<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+															<span class="sr-only">Next</span>
+														</a>
+													</div>
+												</div>
+
+											</div>
+										</div>
+									</div>
 				</section><!--  End testimonials  -->
 		</div>
 
@@ -154,13 +178,24 @@
 
 			<nav>
 				<ul>
-					<li><a href="#">About</a></li>
 					<li><a href="#">Products</a></li>
 					<li><a href="#">Gallery</a></li>
 					<li><a href="#">Services</a></li>
 					<li><a href="#">Contact</a></li>
 				</ul>
 			</nav>
+
+			<br>
+			
+			<div  class="footer-content">
+				<h5>Contact Us!</h5>
+				<h6>FirmName(bold) : Goldreef Teleway LLP</h6>
+				<h6>Address: 4/49, Second Floor, W.E.A, Saraswati Marg, Near Hotel Regent Continental, Karol Bagh, New Delhi - 5, Pin code : 110005, india
+				<h6>Customer Support No. +91-8448031888</h6>
+				<h6>Email : info@nesty.in</h6>
+				<h6>Service mail : service@nesty.in</h6>
+			</div>
+
 		</div>		
 	</footer><!--  End footer  -->
     
