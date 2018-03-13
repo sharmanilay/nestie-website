@@ -284,7 +284,7 @@ h5, h6          { font-weight: bolder }
 /*    testimonials    */
 .testimonials{
     position: relative;
-    padding: 1% 1% 1% 1%;
+    padding: 2% 1% 1% 1%;
 }
 
 .testimonials ul{
@@ -362,180 +362,11 @@ h5, h6          { font-weight: bolder }
     font-weight: normal;
 }
 
-/*Featured Products*/
-.col-centered {
-    float: none;
-    margin: 0 auto;
-}
-
-.carousel-control { 
-    width: 8%;
-    width: 0px;
-}
-.carousel-control.left,
-.carousel-control.right { 
-    margin-right: 40px;
-    margin-left: 32px; 
-    background-image: none;
-    opacity: 1;
-}
-.carousel-control > a > span {
-    color: white;
-    font-size: 29px !important;
-}
-
-.carousel-col { 
-    position: relative; 
-    min-height: 1px; 
-    padding: 5px; 
-    float: left;
- }
-
- .active > div { display:none; }
- .active > div:first-child { display:block; }
-
-/*xs*/
-@media (max-width: 767px) {
-  .carousel-inner .active.left { left: -50%; }
-  .carousel-inner .active.right { left: 50%; }
-  .carousel-inner .next        { left:  50%; }
-  .carousel-inner .prev        { left: -50%; }
-  .carousel-col                { width: 50%; }
-  .active > div:first-child + div { display:block; }
-}
-
-/*sm*/
-@media (min-width: 768px) and (max-width: 991px) {
-  .carousel-inner .active.left { left: -50%; }
-  .carousel-inner .active.right { left: 50%; }
-  .carousel-inner .next        { left:  50%; }
-  .carousel-inner .prev        { left: -50%; }
-  .carousel-col                { width: 50%; }
-  .active > div:first-child + div { display:block; }
-}
-
-/*md*/
-@media (min-width: 992px) and (max-width: 1199px) {
-  .carousel-inner .active.left { left: -33%; }
-  .carousel-inner .active.right { left: 33%; }
-  .carousel-inner .next        { left:  33%; }
-  .carousel-inner .prev        { left: -33%; }
-  .carousel-col                { width: 33%; }
-  .active > div:first-child + div { display:block; }
-  .active > div:first-child + div + div { display:block; }
-}
-
-/*lg*/
-@media (min-width: 1200px) {
-  .carousel-inner .active.left { left: -25%; }
-  .carousel-inner .active.right{ left:  25%; }
-  .carousel-inner .next        { left:  25%; }
-  .carousel-inner .prev        { left: -25%; }
-  .carousel-col                { width: 25%; }
-  .active > div:first-child + div { display:block; }
-  .active > div:first-child + div + div { display:block; }
-  .active > div:first-child + div + div + div { display:block; }
-}
-
-.block {
-  width: 306px;
-  height: 230px;
-}
-
-.red {background: red;}
-
-.blue {background: blue;}
-
-.green {background: green;}
-
-.yellow {background: yellow;}
-.fproducts{
-    z-index: 2000;
-    padding: 1%;
-    background-color: #fafffa;
-    align-content: center;
-    text-align: center;
-}
-.fproducts h1{
-    align-content: center;
-}
-
-.fproducts ul{
-    margin-top: 70px;
-    list-style: none;
-    float: center;
-}
-
-.fproducts ul li{
-    display: inline-block;
-    float: center;
-    width: 313px;
-}
 
 .testimonials ul li:first-child{
     margin-left: 0;
 }
 
-.fproducts ul li .quotes{
-    margin-right: 10px;
-}
-
-.fproducts ul li p{
-    color: #838181;
-    font-family: "raleway-regular";
-    font-size: 16px;
-    line-height: 28px;
-    letter-spacing: .5px;
-    padding-bottom: 30px;
-    margin-bottom: 20px;
-    border-bottom: 1px solid #ecebeb;
-    position: relative;
-}
-
-.fproducts ul li p .triangle{
-    display: block;
-    width: 10px;
-    height: 5px;
-    background: url('../img/testimonial_triangle.png') no-repeat;
-    position: absolute;
-    bottom: -5px;
-    left: 40px;
-}
-
-.fproducts ul li .client{
-    margin-left: 20px;
-}
-
-.fproducts ul li .client img.avatar{
-    float: left;
-    margin-right: 20px;
-    -webkit-border-radius: 100px;
-    -moz-border-radius: 100px;
-    -o-border-radius: 100px;
-    border-radius: 100px;
-}
-
-.fproducts ul li .client .client_details{
-    float: left;
-}
-
-.fproducts ul li .client .client_details h4{
-    color: #7b7979;
-    font-family: "raleway-semibold";
-    font-size: 14px;
-    font-weight: bold;
-    margin: 0 0 10px 0;
-}
-
-.fproducts ul li .client .client_details h5{
-    color: #7b7979;
-    font-family: "raleway-regular";
-    font-size: 12px;
-    margin: 0;
-    font-weight: normal;
-}
-
-/*Featured Products Ends*/
 
 
 
