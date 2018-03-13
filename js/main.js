@@ -2,7 +2,8 @@ $(document).ready(function(){
 
 	//parallax init
 	startSite();
-	
+
+	$('#fullpage').fullpage();
 
 	// mulitscroll.js init
 	$('#multiscroll').multiscroll();
@@ -60,7 +61,7 @@ function castParallax() {
 
 
 	$(window).scroll(function(){
-		var windowScroll = this.pageYOffset - 1050;
+		var windowScroll = this.pageYOffset - 1750;
 		
 		$('.keyart_layer.parallax').each(function(){
 			var $layer = $(this);
@@ -76,11 +77,11 @@ function castParallax() {
 
 
 	window.addEventListener("scroll", function(event){
-		var top = this.pageYOffset -1050;
+		var top = this.pageYOffset -1750;
 
 		var layers = document.getElementsByClassName("parallax");
 		var layer, speed, yPos;
-		 if(window.pageYOffset>400){
+		 if(window.pageYOffset>1200){
 			for (var i = 0; i < layers.length; i++) {
 				layer = layers[i];
 				speed = layer.getAttribute('data-speed');

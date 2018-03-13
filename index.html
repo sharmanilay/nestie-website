@@ -12,6 +12,7 @@
 	<link rel="stylesheet" type="text/css" href="css/fancybox-buttons.css">
 	<link rel="stylesheet" type="text/css" href="css/fancybox.css">
 	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
@@ -23,11 +24,13 @@
     <script type="text/javascript" src="js/fancybox-media.js"></script>
     <script type="text/javascript" src="js/fancybox-thumbs.js"></script>
     <script type="text/javascript" src="js/wow.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
 </head>
 <body>
 
-			<div class="container-fluid">
+			<div class="container-fluid fullPage">
+				<div class="section">
 					<section class="navbar-cont"> 
 						<div>
 							<nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: #110f07;margin-bottom: 10px;">
@@ -57,32 +60,17 @@
 							</nav>
 						</div>
 					</section>
-					
-					<section>
+				<section class="video">	
+						<video id="bgVideo" autoplay muted loop >
+						<source src="./img/dhundhun.webm" type="video/webm">
+						</video>
+				</section>
+				</div>
 
-						<div class="caption light animated wow fadeInDown clearfix">
-							<div class="row">
-									<div class="col-lg-4 animated wow fadeInDown" ></div>
-									<div class="col-lg-4 animated wow fadeInDown" >
-									<h1>NESTY</h1>
-									<h>feels like flying</h>	
-									</div>
-
-           
-							</div>
-						</div>
-
-						<div class="shadow"></div>
-					</section>
-					<section class="video">	
-							<video id="bgVideo" autoplay mute loop style="width: 100% height: auto;">
-							<source src="./img/Phoenix_Reveal.mp4" type="video/mp4">
-							</video>
-					</section>
-
-				<section class="testimonials wrapper">
-			
-						<div class="row clearfix">
+				<div class="section">
+					<section class="testimonials wrapper">
+						<div>
+								<div class="row clearfix">
 						<div class="col-lg-4 animated wow fadeInDown" >
 							<img class="img-circle" src="img/listen.png" alt="Generic placeholder image" width="140" height="140">
 						  <h2>Listen</h2>
@@ -103,7 +91,9 @@
 						</div>
 						</div>
 
-				</section>
+							</div>
+							
+					</section>
 				<section>
 				<div class="keyart" id="parallax">
 					<div class="keyart_layer parallax" id="keyart-0" data-speed="2" style="transform: translate3d(0px, 0px, 0px)"></div>		<!-- 00.0 -->
@@ -167,6 +157,7 @@
 										</div>
 									</div>
 				</section><!--  End testimonials  -->
+			</div>
 		</div>
 
 
