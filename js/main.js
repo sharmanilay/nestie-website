@@ -129,14 +129,18 @@ $('.carousel[data-type="multi"] .item').each(function() {
 			});
 
 function contactus(){
-	$(".footer-contet").mouseenter(function(){
-			$("div.footer-content").slideDown(800);
-			});	
-		$("#footer").mouseleave(function(){
-			$("div.footer-content").slideUp(800);
-			});	
+	var footer = $( ".footer-content" );
+		$( ".trigger" ).hover(
+			function( event ){
+				event.preventDefault();
+				if(footer.is( ":visible" )){
+					footer.slideUp( 800 );
+				}else{
+					footer.slideDown( 800 );
+				}
+			}
+		);
 }
-
 function castParallax() {
 
 	var opThresh = 400;
