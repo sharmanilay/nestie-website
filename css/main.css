@@ -47,6 +47,67 @@ body{
     padding: 0% 0% 0% 0%;
     position: relative !important;
 }
+.section{
+    text-align:center;
+    overflow: hidden;
+  }
+
+  #myVideo{
+    position: relative;
+    right: 0;
+    bottom: 0;
+    top:0;
+    right:0;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    background-color: black; /* in case the video doesn't fit the whole page*/
+      background-image: /* our video */;
+      background-position: center center;
+      background-size: contain;
+      object-fit: cover; /*cover video background */
+      z-index:3;
+  }
+
+
+
+  /* Layer with position absolute in order to have it over the video
+  * --------------------------------------- */
+  #section0 .layer{
+    position: absolute;
+    z-index: 4;
+    width: 100%;
+    left: 0;
+    top: 43%;
+
+    /* 
+    * Preventing flicker on some browsers 
+    * See http://stackoverflow.com/a/36671466/1081396  or issue #183
+    */
+    -webkit-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+  }
+
+  /*solves problem with overflowing video in Mac with Chrome */
+  #section0{
+    overflow: hidden;
+  }
+
+
+  /* Bottom menu
+  * --------------------------------------- */
+  #infoMenu li a {
+    color: #fff;
+  }
+
+
+  /* Hiding video controls 
+  * See: https://css-tricks.com/custom-controls-in-html5-video-full-screen/
+  * --------------------------------------- */
+  video::-webkit-media-controls {
+    display:none !important;
+  }
 
 
 
@@ -99,7 +160,7 @@ h5, h6          { font-weight: bolder }
   z-index: -101;
 }
 
-
+/*
 video#bgVideo {
 
           position:relative;
@@ -126,7 +187,7 @@ video {
   body{
     background-image:url(“https://static.pexels.com/photos/134/light-creative-abstract-colorful.jpg”);
   }
-}
+}*/
 .caption{
   padding-top: 150px;
 }
@@ -507,6 +568,10 @@ video {
 
 
 /*    footer    */
+.conbutton{
+  background-color: #252727;
+  color:#ffffff;
+}
 footer{
     padding: 35px 0;
     padding-right: 35px;
