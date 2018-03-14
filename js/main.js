@@ -1,5 +1,3 @@
-	var slidex = 0;
-
 $(document).ready(function(){
 
 	//parallax init
@@ -80,7 +78,7 @@ $(document).ready(function(){
 				
 
 	// mulitscroll.js init
-	$('#multiscroll').multiscroll();
+//$('#multiscroll').multiscroll();
 
 	//fancybox.js init
 	$('.fancybox').fancybox({
