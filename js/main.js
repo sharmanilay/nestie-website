@@ -128,19 +128,6 @@ $('.carousel[data-type="multi"] .item').each(function() {
 				}
 			});
 
-function contactus(){
-	var footer = $( ".footer-content" );
-		$( ".trigger" ).hover(
-			function( event ){
-				event.preventDefault();
-				if(footer.is( ":visible" )){
-					footer.slideUp( 800 );
-				}else{
-					footer.slideDown( 800 );
-				}
-			}
-		);
-}
 function castParallax() {
 
 	var opThresh = 400;
