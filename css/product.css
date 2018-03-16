@@ -1,9 +1,82 @@
-
+/*Earphones*/
 .earphones{
-    background-image: url('../img/products/earphones.png');
+    background-image: url('../img/ear1.png');
     background-size: cover;
-    background-color: #d61233;
+    background-position: 0%;
+    background-color: #b3b3b3;
+}
+.earphones,h1{
+    color: #f1dfff;
 }
 .earphones-description{
-    background-color: #d61233;
+    background-image: url('../img/ear2.png');
+    background-size: cover;
+    background-position: center;
+    background-color: #b3b3b3;
+    text-align: center;
+    font-size: 3vh;
+    font-family: "raleway-regular", arial;
 }
+.earphones-content{
+    color: #d4e6f1;
+    text-shadow: firebrick;
+    margin-left: 20%;
+    width: 70%;
+}
+.eheading{
+    margin-bottom: 80%;
+    margin-left: 20%;
+    font-size: 8vh;
+    color: #d4e6f1;
+    text-shadow: firebrick;
+}
+
+/*Earphones end*/
+/* Car Chargers*/
+.car-chargers{
+    background-image: url('../img/car22.png');
+    background-size: cover;
+    background-position: center;
+    background-color: #b3b3b3;
+    text-align: center
+}
+.car-chargers-description{
+    background-image: url('../img/car11.png');
+    background-size: cover;
+    background-position: center;
+    background-color: #b3b3b3;
+    text-align: center;
+    font-size: 3vh;
+    font-family: "raleway-regular", arial;
+}
+.car-content{
+    color: #7b241c;
+    text-shadow: firebrick;
+    margin-left: 20%;
+    width: 70%;
+}
+.cheading{
+    margin-bottom: 80%;
+    margin-left: 20%;
+    font-size: 8vh;
+    color: #7b241c;
+    text-shadow: firebrick;
+}
+/*Car Chargers end*/
+
+/*Cables*/
+.cables{
+    background-image: url('../img/cable1.png');
+    background-size: cover;
+    background-position: 0%;
+    background-color: #b3b3b3;
+}
+.cables-description{
+    background-image: url('../img/cable2.png');
+    background-size: cover;
+    background-position: center;
+    background-color: #b3b3b3;
+    text-align: center
+}
+/*Cables end*/
+
