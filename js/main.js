@@ -1,5 +1,3 @@
-	var slidex = 0;
-
 $(document).ready(function(){
 
 	//parallax init
@@ -80,7 +78,7 @@ $(document).ready(function(){
 				
 
 	// mulitscroll.js init
-	$('#multiscroll').multiscroll();
+//$('#multiscroll').multiscroll();
 
 	//fancybox.js init
 	$('.fancybox').fancybox({
@@ -128,19 +126,6 @@ $('.carousel[data-type="multi"] .item').each(function() {
 				}
 			});
 
-function contactus(){
-	var footer = $( ".footer-content" );
-		$( ".trigger" ).hover(
-			function( event ){
-				event.preventDefault();
-				if(footer.is( ":visible" )){
-					footer.slideUp( 800 );
-				}else{
-					footer.slideDown( 800 );
-				}
-			}
-		);
-}
 function castParallax() {
 
 	var opThresh = 400;
