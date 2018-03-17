@@ -33,6 +33,13 @@
 				verticalCentered: true,
 				sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE']
 			});
+			$("#toggle").click(function()
+				{
+
+				    $(".contents").toggle(500);
+
+
+				});
 		});
 	</script>
     <script type="text/javascript" src="js/main.js"></script>
@@ -141,10 +148,9 @@
 					<li><a href="#">Contact</a></li>
 				</ul>
 			</nav>
-
-			<button class="conbutton" onclick="contactus()" >^</button>
+			<button id="toggle" class="button1" style="background-color: #252727;margin-left: 450px;color:  #838181; border: 0px solid #252727;"> ^^ </button>
 			
-			<div class="footer-content">
+			<div class="footer-content"style="display: none;">
 				<h5>Contact Us!</h5>
 				<h6>FirmName(bold) : Goldreef Teleway LLP</h6>
 				<h6>Address: 4/49, Second Floor, W.E.A, Saraswati Marg, Near Hotel Regent Continental, Karol Bagh, New Delhi - 5, Pin code : 110005, india</h6>
