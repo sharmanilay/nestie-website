@@ -1,4 +1,12 @@
 /*Earphones*/
+.ebutton{
+    margin-left: 30%;
+    margin-bottom: 10%;
+    color: #d4e6f1;
+    font-size: 3vh;
+    font-family: "raleway-regular", arial;
+    background-color: Transparent;
+}
 .earphones{
     background-image: url('../img/ear1.png');
     background-size: cover;
@@ -24,12 +32,13 @@
     width: 70%;
 }
 .eheading{
-    margin-bottom: 80%;
+    margin-bottom: 60%;
     margin-left: 20%;
     font-size: 8vh;
     color: #d4e6f1;
     text-shadow: firebrick;
 }
+
 
 /*Earphones end*/
 /* Car Chargers*/
@@ -56,11 +65,19 @@
     width: 70%;
 }
 .cheading{
-    margin-top: 70%;
+    margin-top: 40%;
     margin-right: 50%;
     font-size: 8vh;
     color:  #91cac3;
     text-shadow: firebrick;
+}
+.cbutton{
+    margin-right: 49%;
+    margin-bottom: 2%;
+    color: #91cac3;
+    font-size: 3vh;
+    font-family: "raleway-regular", arial;
+    background-color: Transparent;
 }
 /*Car Chargers end*/
 /*Speakers*/

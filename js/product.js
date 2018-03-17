@@ -37,3 +37,10 @@ $(document).ready(function() {
 		afterResize: function(){},
 	});
 });
+
+function egallery(){
+	location.href = 'egallery.html';
+}
+function cgallery(){
+	location.href = 'cgallery.html';
+}
