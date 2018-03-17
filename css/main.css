@@ -423,9 +423,11 @@ h5, h6          { font-weight: bolder }
 
 
 /*    footer    */
-.conbutton{
-  background-color: #252727;
-  color:#ffffff;
+.button1{
+  margin-left: 39%;
+  background-color: Transparent;
+  border-color: transparent;
+  color:#f7ff8d;
 }
 footer{
     padding: 35px 0;
@@ -445,14 +447,14 @@ footer .footer_logo{
 
 footer .rights p{
     float: left;
-    color: #838181;
+    color: #f7ff8d;
     font-family: "raleway-regular";
     font-size: 13px;
     margin: 5px 0 0 40px; 
 }
 
 footer .rights p a{
-    color: #777;
+    color: #f7ff8d;
     font-family: "raleway-semibold";
     font-size: 13px;
     font-weight: bold;
@@ -472,7 +474,7 @@ footer nav ul li{
 }
 
 footer nav ul li a{
-    color: #838181;
+    color: #f7ff8d;
     font-family: "raleway-regular";
     font-size: 13px;
     text-decoration: none;
@@ -484,8 +486,13 @@ footer nav ul li a{
 }
 
 footer nav ul li a:hover{
+    text-decoration: none;
     color: #616161;
 }
 .footer-content{
-  text-align: center;
+    color: #f7ff8d;
+    text-align: center;
+}
+.footer-content h4,h6{
+    color: #f7ff8d;
 }
