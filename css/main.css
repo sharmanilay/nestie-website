@@ -43,9 +43,10 @@ body{
     background: #fff;
     position: relative;
 }
-.color{
-    margin-top: 15%;
-    color: #f7ff8d;
+.logo{
+    padding-top: 0.5vh;
+    height: 6vh;
+    width: 30vh;
 }
 .container-fluid {
     padding: 0% 0% 0% 0%;
@@ -400,7 +401,7 @@ h5, h6          { font-weight: bolder }
 .carousel {
     background-color: transparent;
     height: 600px;
-    width: 60%;
+    width: 100%;
 }
 .carousel-caption {
     z-index: 10;
