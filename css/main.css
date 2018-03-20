@@ -167,8 +167,21 @@ h5, h6          { font-weight: bolder }
 .nav li a:hover{
         background-color:#110f07;
 }
+.nav-item a:active{
+    background-color: #110f07;
+}
 .nav-item a:hover{
     color: aqua;
+}
+.dropdown-toggle{
+    color:#f7ff8d;
+}
+.dropdown-toggle a:active{
+    background-color: #110f07;
+}
+.dropdown-menu{
+    color: #f7ff8d;
+    background-color: #626262;
 }
 /*Navigation Bar Ends*/
 
@@ -397,29 +410,46 @@ h5, h6          { font-weight: bolder }
     margin-left: 0;
 }
 /*products*/
+.fpheading{
+    margin-top: 0px;
+    padding: 1% 1% 1% 1%;
+    display: block;
+    min-width: 100%;
+    background-color: #1b0000;
+}
+.fpheading h1{
+    color: #FF5045;
+    font-size: 8vh;
+    font-family: "raleway-regular", arial;
+}
 
 .carousel {
     background-color: transparent;
     height: 600px;
     width: 100%;
 }
+.pro {
+    width: 80%;
+    margin-left: 9%; 
+}
+
 .carousel-caption {
     z-index: 10;
   }
   
 .slideshow1{
     background-color: #1b0000; 
-    background-image: url('https://static.pexels.com/photos/519403/pexels-photo-519403.jpeg');
+    
     /*background-image: url('https://static.pexels.com/photos/255527/pexels-photo-255527.jpeg');*/
     background-size: cover;
     background-position: center;
-    background-color: #b3b3b3;
-    text-align: center
+   
+    text-align: center;
 }
   
   .carousel .item {
     height: 600px;
-    background-color: transparent;
+    background-image: url('https://truenaturepharma.com/wp-content/uploads/2017/03/white-gradient-2.jpg');
   }
   .carousel-inner > .item > img {
     position: absolute;

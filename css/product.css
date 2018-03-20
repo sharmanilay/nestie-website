@@ -124,7 +124,31 @@
     background-size: cover;
     background-position: center;
     background-color: #b3b3b3;
-    text-align: center
+    text-align: center;
+    font-size: 3vh;
+    font-family: "raleway-regular", arial;
+}
+
+.cable-content{
+    color: #91cac3;
+    text-shadow: firebrick;
+    margin-left: 20%;
+    width: 70%;
+}
+.cableHeading{
+    margin-top: 2%;
+    margin-left: 20%;
+    font-size: 8vh;
+    color:  #91cac3;
+    text-shadow: firebrick;
+}
+.cableButton{
+    margin-left: 21%;
+    margin-top: 30%;
+    color: #91cac3;
+    font-size: 3vh;
+    font-family: "raleway-regular", arial;
+    background-color: Transparent;
 }
 /*Cables end*/
 
