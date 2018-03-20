@@ -2,6 +2,7 @@ $(document).ready(function(){
 
 	//parallax init
 	startSite();
+	$( '#my-slider' ).sliderPro();
 			$('#fullpage').fullpage({
 						//Navigation
 						menu: '#menu',
