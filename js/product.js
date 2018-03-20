@@ -44,3 +44,6 @@ function egallery(){
 function cgallery(){
 	location.href = 'cgallery.html';
 }
+function cableGallery(){
+	location.href = 'cablegallery.html';
+}
