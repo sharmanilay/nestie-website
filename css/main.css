@@ -415,10 +415,10 @@ h5, h6          { font-weight: bolder }
     padding: 1% 1% 1% 1%;
     display: block;
     min-width: 100%;
-    background-color: #1b0000;
+    background-color: #110f07;
 }
 .fpheading h1{
-    color: #FF5045;
+    color: #fffa67;
     font-size: 8vh;
     font-family: "raleway-regular", arial;
 }
@@ -438,7 +438,7 @@ h5, h6          { font-weight: bolder }
   }
   
 .slideshow1{
-    background-color: #1b0000; 
+    background-color: #110f07; 
     
     /*background-image: url('https://static.pexels.com/photos/255527/pexels-photo-255527.jpeg');*/
     background-size: cover;
