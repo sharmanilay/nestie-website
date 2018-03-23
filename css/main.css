@@ -43,10 +43,17 @@ body{
     background: #fff;
     position: relative;
 }
+
 .logo{
     padding-top: 0.5vh;
     height: 6vh;
     width: 30vh;
+}
+.color{
+    color: #f7ff8d;
+}
+.color h2{
+    padding-bottom: 5%;
 }
 .container-fluid {
     padding: 0% 0% 0% 0%;
@@ -145,11 +152,32 @@ h5, h6          { font-weight: bolder }
 
 
 /*Navigation Bar*/
+.affix {
+    padding:0px;
+    -webkit-transition:padding 0.2s linear;
+    -moz-transition:padding 0.2s linear;  
+    -o-transition:padding 0.2s linear;         
+    transition:padding 0.2s linear;  
+  
+  }
+  
+  .affix-top {
+    padding-top:15px;
+    padding-bottom:15px;
+    -webkit-transition:padding 0.5s linear;
+    -moz-transition:padding 0.5s linear;  
+    -o-transition:padding 0.5s linear;         
+    transition:padding 0.5s linear;  
+  }
+  
 .nav{
   padding: 5px 0px 5px 0px;
 }
 .navbar{
     border-radius: 0px;
+}
+.navbar-brand{
+    padding-bottom: 1%;
 }
 .nestylogo img{
     width: 3%;
@@ -159,9 +187,10 @@ h5, h6          { font-weight: bolder }
   margin-bottom: 10px !important;
 }
 .nav{
-    margin-left: 70%;
+    margin-left: 68%;
 }
 .nav-item a{
+    font-size: 1.17em;
     color:#f7ff8d;
 }
 .nav li a:hover{
@@ -171,9 +200,10 @@ h5, h6          { font-weight: bolder }
     background-color: #110f07;
 }
 .nav-item a:hover{
-    color: aqua;
+    color: #fff;
 }
 .dropdown-toggle{
+    font-size: 1.17em;
     color:#f7ff8d;
 }
 .dropdown-toggle a:active{
@@ -209,7 +239,9 @@ h5, h6          { font-weight: bolder }
   padding-right: 6%;
   text-align: center;
 }
-
+.imgi{
+    margin-left: 45%;
+}
 /*Listen Power Connect Section  Ends*/
 /* PARALLAX */
 
