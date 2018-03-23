@@ -21,9 +21,28 @@ $(document).ready(function() {
 		touchSensitivity: 5,
 
 		//responsive
-		responsiveWidth: 0,
-		responsiveHeight: 0,
-		responsiveExpand: false,
+		responsiveWidth: 900,
+		responsiveExpand: true,
+		responsiveExpandKey: 'YWx2YXJvdHJpZ28uY29tX3IxaGNtVnpjRzl1YzJsMlpVVjRjR0Z1WkE9PWo4Mw==',
+		afterResponsive: function(){
+			console.log("after responsive...");
+		},
+		onLeave: function(index, nextIndex, direction){
+			console.log("onLeave: index:" + index + " nextIndex:" + nextIndex + " direction:"+direction);
+			if(index ===1){
+				$('.section1').addClass('hideOverflow');
+				$('body').removeClass('section1-loaded');
+			}
+		},
+		afterLoad: function(anchorLink, index){
+			if(index === 1){
+				$('.section1').removeClass('hideOverflow');
+				$('body').addClass('section1-loaded');
+			}
+		},
+		afterRender: function(){
+			$('body').addClass('section1-loaded');
+		},
 
 		// Custom selectors
 		sectionSelector: '.ms-section',
