@@ -61,7 +61,7 @@ function egallery(){
 	location.href = 'egallery.html';
 }
 function cgallery(){
-	location.href = 'cgallery.html';
+	location.href = 'products/index.html';
 }
 function cableGallery(){
 	location.href = 'cablegallery.html';

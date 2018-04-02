@@ -1,4 +1,4 @@
-/* -------------------------------- 
+/* --------------------------------
 
 Primary style
 
@@ -15,7 +15,7 @@ body {
   font-size: 1.6rem;
   font-family: "Lato", sans-serif;
   color: #24221F;
-  background-color: #ffffff;
+  background-color: #black;
 }
 
 a {
@@ -27,7 +27,7 @@ img {
   max-width: 100%;
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
 Home Link
 
@@ -93,9 +93,9 @@ Home Link
   }
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
-Main Components 
+Main Components
 
 -------------------------------- */
 .cd-product-builder {
@@ -138,7 +138,7 @@ Main Components
   display: none;
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
 Step content - basic style
 
@@ -425,7 +425,7 @@ Step content - basic style
             transform: scale(1.5);
   }
 }
-/* -------------------------------- 
+/* --------------------------------
 
 Models Step - style
 
@@ -495,7 +495,7 @@ Models Step - style
             transform: rotate(360deg);
   }
 }
-/* -------------------------------- 
+/* --------------------------------
 
 Colors Step - style
 
@@ -628,7 +628,7 @@ Colors Step - style
   background-color: #d1d1d1;
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
 Accessories Step - style
 
@@ -684,7 +684,7 @@ Accessories Step - style
   }
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
 Summary Step - style
 
@@ -789,7 +789,7 @@ Summary Step - style
   }
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
 Builder top navigation
 
@@ -807,7 +807,8 @@ Builder top navigation
     width: 100%;
     padding: 0 5%;
     text-align: center;
-    background: #ffffff;
+    color: #f7ff8d;
+    background: Black;
   }
   .cd-product-builder .main-header::after {
     /* this is to create the linear gradient below the header */
@@ -863,7 +864,7 @@ Builder top navigation
   }
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
 Builder fixed bottom summary
 
