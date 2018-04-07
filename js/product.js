@@ -22,8 +22,7 @@ $(document).ready(function() {
 
 		//responsive
 		responsiveWidth: 900,
-		responsiveExpand: true,
-		responsiveExpandKey: 'YWx2YXJvdHJpZ28uY29tX3IxaGNtVnpjRzl1YzJsMlpVVjRjR0Z1WkE9PWo4Mw==',
+		
 		afterResponsive: function(){
 			console.log("after responsive...");
 		},
