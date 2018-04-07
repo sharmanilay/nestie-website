@@ -1,4 +1,7 @@
 
+#multiscroll{
+  display: block;
+}
 /*Earphones*/
 .ebutton{
     margin-left: 30%;
@@ -9,7 +12,7 @@
     background-color: Transparent;
 }
 .earphones{
-    background-image: url('../img/ear1.png');
+    background-image: url('../img/OpI/ear1.png');
     background-size: cover;
     background-position: 0%;
     background-color: #b3b3b3;
@@ -18,7 +21,7 @@
     color: #f1dfff;
 }
 .earphones-description{
-    background-image: url('../img/ear2.png');
+    background-image: url('../img/OpI/ear2.png');
     background-size: cover;
     background-position: center;
     background-color: #b3b3b3;
@@ -44,14 +47,14 @@
 /*Earphones end*/
 /* Car Chargers*/
 .car-chargers{
-    background-image: url('../img/car112.png');
+    background-image: url('../img/OpI/car112.png');
     background-size: cover;
     background-position: center;
     background-color: #b3b3b3;
     text-align: center
 }
 .car-chargers-description{
-    background-image: url('../img/car111.png');
+    background-image: url('../img/OpI/car111.png');
     background-size: cover;
     background-position: center;
     background-color: #d4e6f1;
@@ -83,14 +86,14 @@
 /*Car Chargers end*/
 /*Speakers*/
 .speakers{
-    background-image: url('../img/speaker1.png');
+    background-image: url('../img/OpI/speaker1.png');
     background-size: cover;
     background-position: center;
     background-color: #b3b3b3;
     text-align: center;
 }
 .speakers-description{
-    background-image: url('../img/speaker2.png');
+    background-image: url('../img/OpI/speaker2.png');
     background-size: cover;
     background-position: center;
     background-color: #d4e6f1;
@@ -115,13 +118,13 @@
 
 /*Cables*/
 .cables{
-    background-image: url('../img/cable1.png');
+    background-image: url('../img/OpI/cable1.png');
     background-size: cover;
     background-position: 0%;
     background-color: #b3b3b3;
 }
 .cables-description{
-    background-image: url('../img/cable2.png');
+    background-image: url('../img/OpI/cable2.png');
     background-size: cover;
     background-position: center;
     background-color: #b3b3b3;
@@ -152,4 +155,12 @@
     background-color: Transparent;
 }
 /*Cables end*/
+#mobile-version{
+  display: none;
+}
 
+@media  only screen and (max-width: 481px){
+  #multiscroll{
+    display: none;
+  }
+}

@@ -273,7 +273,7 @@ Step content - basic style
 @media only screen and (min-width: 1024px) {
   .cd-step-content {
     /* this padding takes care of both top and bottom fixed navigations */
-    padding: 220px 0 140px;
+    padding: 50px; 0 140px;
     max-width: 1000px;
     margin: 0 auto;
   }
@@ -288,7 +288,7 @@ Step content - basic style
 }
 @media only screen and (min-width: 1480px) and (min-height: 850px) {
   .cd-step-content {
-    padding: 250px 0 140px;
+    padding: 100px 0 140px;
   }
 }
 
@@ -445,7 +445,7 @@ Models Step - style
 .cd-builder-steps .models-list img {
   display: block;
   max-width: 80%;
-  margin: 1.8em auto 2.2em;
+  margin: 0.2em 1em 0.2em;
 }
 .cd-builder-steps .models-list .price {
   display: block;
@@ -805,7 +805,7 @@ Builder top navigation
     top: 0;
     left: 0;
     width: 100%;
-    padding: 0 5%;
+    padding: 0 2%;
     text-align: center;
     color: #f7ff8d;
     background: Black;
@@ -817,14 +817,15 @@ Builder top navigation
     top: 100%;
     left: 0;
     width: 100%;
-    height: 70px;
+    height: 50px;
     background-image: -webkit-linear-gradient(top, white, rgba(255, 255, 255, 0));
     background-image: linear-gradient(to bottom, white, rgba(255, 255, 255, 0));
   }
   .cd-product-builder .main-header h1 {
     font-size: 3.8rem;
-    margin: 1.1em auto .76em;
+    margin: 0.4em auto .4em;
     font-weight: bold;
+    float: left;
   }
 }
 @media only screen and (min-width: 1480px) and (min-height: 850px) {
@@ -833,7 +834,10 @@ Builder top navigation
   }
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1024px){
+.cd-builder-main-nav{
+  float:right;
+}
   .cd-builder-main-nav li {
     display: inline-block;
   }
@@ -844,7 +848,7 @@ Builder top navigation
     letter-spacing: .1em;
     text-transform: uppercase;
     color: #5D7C89;
-    padding: .7em .8em;
+    padding: 2.7em .8em;
     border-bottom: 2px solid transparent;
     -webkit-transition: color .2s, border-color .2s;
     transition: color .2s, border-color .2s;
@@ -876,7 +880,8 @@ Builder fixed bottom summary
   left: 0;
   width: 100%;
   height: 54px;
-  background: #ffffff;
+  background: black;
+  color: #f7ff8d;
   box-shadow: 0 -2px 24px rgba(0, 0, 0, 0.2);
   -webkit-transition: -webkit-transform .3s;
   transition: -webkit-transform .3s;
@@ -900,7 +905,8 @@ Builder fixed bottom summary
 @media only screen and (min-width: 1024px) {
   .cd-builder-footer {
     height: 100px;
-    padding: 0 2em;
+    padding: 0 1em;
+
     box-shadow: 0 0 39px rgba(0, 0, 0, 0.1);
   }
   .cd-builder-footer::after {
@@ -934,6 +940,7 @@ Builder fixed bottom summary
   }
   .cd-builder-footer .selected-product, .cd-builder-footer img, .cd-builder-footer .tot-price {
     float: left;
+    color: #f7ff8d;
   }
   .cd-builder-footer img {
     width: 197px;
@@ -945,13 +952,13 @@ Builder fixed bottom summary
   }
   .cd-builder-footer .selected-product span {
     display: block;
-    color: #5D7C89;
+    color: #f7ff8d;
   }
   .cd-builder-footer .tot-price {
     margin-top: 12px;
   }
   .cd-builder-footer .selected-product .total {
-    color: #24221F;
+    color: #f7ff8d;
     font-size: 3.2rem;
     margin-top: 4px;
   }
@@ -967,6 +974,7 @@ Builder fixed bottom summary
   .cd-builder-footer .alert {
     display: block;
     position: absolute;
+    color: #f7ff8d;
     top: 120%;
     left: 50%;
     -webkit-transform: translateX(-50%) translateY(-50%);
@@ -981,6 +989,7 @@ Builder fixed bottom summary
   }
   .cd-builder-footer.disabled.show-alert .alert {
     top: 50%;
+    color: #f7ff8d;
   }
 }
 @media only screen and (min-width: 1024px) and (min-height: 850px) {
@@ -1003,12 +1012,11 @@ Builder fixed bottom summary
 }
 .cd-builder-secondary-nav .prev {
   left: 0;
-  color: #5D7C89;
 }
 .cd-builder-secondary-nav .next {
   z-index: 1;
   right: 0;
-  background: #FFB500;
+  background: black;
 }
 .cd-builder-secondary-nav .next:hover {
   background: #ffbc1a;
@@ -1085,7 +1093,7 @@ Builder fixed bottom summary
   display: block;
 }
 .cd-builder-secondary-nav .next a {
-  color: #ffffff;
+  color: #f7ff8d;
 }
 @media only screen and (min-width: 1024px) {
   .cd-builder-secondary-nav {
