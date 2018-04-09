@@ -620,6 +620,9 @@ Colors Step - style
 [data-color="black"]{
   background-color: #000000;
 }
+[data-color="red"]{
+  background-color: #d80013;
+}
 [data-color="grey"] {
   background-color: #303539;
 }
