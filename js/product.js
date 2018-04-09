@@ -60,10 +60,10 @@ $(document).ready(function() {
 });
 
 function egallery(){
-	location.href = 'egallery.html';
+	location.href = 'products/earphones.html';
 }
 function cgallery(){
-	location.href = 'products/index.html';
+	location.href = 'products/carchargers.html';
 }
 function cableGallery(){
 	location.href = 'cablegallery.html';
