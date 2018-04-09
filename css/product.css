@@ -204,16 +204,64 @@
   /* Car Chargers*/
 
   .cheading{
+      margin-top: 0%;
+      padding-top: 20%;
+      padding-left: 40%;
       font-size: 8vh;
       color:  #91cac3;
       text-shadow: firebrick;
   }
   .cbutton{
+    margin-top: 60%;
+    margin-left: 5%;
       color: #91cac3;
       font-size: 3vh;
       font-family: "raleway-regular", arial;
       background-color: Transparent;
   }
   /*Car Chargers end*/
+  .speakers{
+      background-image: url('../img/OpI/speaker1.png') !important;
+      background-size: cover  !important;
+      background-color: #b3b3b3;
+      text-align: center;
+  }
+  .sheading{
+    margin-top: 0%;
+      padding-top: 60%;
+      padding-left: 5%;
+      font-size: 8vh;
+      color:  #91cac3;
+      text-shadow: firebrick;
+  }
+  .spButton{
+    margin-top:50%;
+    color: #91cac3;
+    font-size: 3vh;
+    font-family: "raleway-regular", arial;
+    background-color: Transparent;
+  }
+  .cables{
+      background-image: url('../img/OpI/cable1.png') !important;
+      background-size: cover !important;
+      background-color: #b3b3b3;
+  }
+
+  .cableHeading{
+      margin-top: 0%;
+      padding-top: 20%;
+      margin-left: 20%;
+      font-size: 8vh;
+      color:  #91cac3;
+      text-shadow: firebrick;
+  }
+  .cableButton{
+      margin-left: 21%;
+      margin-top: 80%;
+      color: #91cac3;
+      font-size: 3vh;
+      font-family: "raleway-regular", arial;
+      background-color: Transparent;
+  }
 
 }
