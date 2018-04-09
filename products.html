@@ -12,12 +12,15 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="stylesheet" type="text/css" href="css/product.css">
 	<link rel="stylesheet" type="text/css" href="css/jquery.multiscroll.css" />
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/full-slider.css" rel="stylesheet">
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 	<script src="js/multiscroll/vendors/jquery.easings.min.js"></script>
 	<script type="text/javascript" src="js/multiscroll/jquery.multiscroll.js"></script>
 	<!--<script type="text/javascript" src="js/multiscroll/dist/responsive.multiscroll.js"></script>
 	--><script type="text/javascript" src="js/multiscroll/dist/extension.js"></script>
+
   <script type="text/javascript" src="js/product.js"></script>
 </head>
 <body>
@@ -37,6 +40,7 @@
 					</div>
 					<div class="ms-section  speakers">
 						<h1 class="sheading">Speakers</h1>
+						<button onclick="cableGallery()" class="spButton">View All Speakers</button>
 					</div>
 					<div class="ms-section  cables">
 						<h1 class="cableHeading">Cables</h1>
@@ -70,8 +74,48 @@
 				</div>
 		</div>
 		<div id="mobile-version">
-				<h1>Hi!!!</h1>
+			<header>
+	      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+	        <ol class="carousel-indicators">
+	          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+	          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+	          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+	        </ol>
+	        <div class="carousel-inner" role="listbox">
+	          <!-- Slide One - Set the background image for this slide in the line below -->
+	          <div class="carousel-item active earphones">
+	            <div >
+								<h3 class="eheading">Earphones</h3>
+								<button class="ebutton" onclick="egallery()" >View All Earphones</button>
+	            </div>
+	          </div>
+	          <!-- Slide Two - Set the background image for this slide in the line below -->
+	          <div class="carousel-item car-chargers">
+							<h1 class="cheading">Car Chargers</h1>
+							<button onclick="cgallery()" class="cbutton">View All Car Chargers</button>
+	          </div>
+	          <!-- Slide Three - Set the background image for this slide in the line below -->
+	          <div class="carousel-item" style="background-image: url('http://placehold.it/1900x1080')">
+	            <div class="carousel-caption d-none d-md-block">
+	              <h3>Third Slide</h3>
+	              <p>This is a description for the third slide.</p>
+	            </div>
+	          </div>
+	        </div>
+	        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+	          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+	          <span class="sr-only">Previous</span>
+	        </a>
+	        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+	          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+	          <span class="sr-only">Next</span>
+	        </a>
+	      </div>
+	    </header>
 		</div>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>

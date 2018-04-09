@@ -108,6 +108,12 @@
     color:  #91cac3;
     text-shadow: firebrick;
 }
+.spButton{
+  color: #91cac3;
+  font-size: 3vh;
+  font-family: "raleway-regular", arial;
+  background-color: Transparent;
+}
 .speaker-content{
     color: #91cac3;
     text-shadow: firebrick;
@@ -159,8 +165,55 @@
   display: none;
 }
 
-@media  only screen and (max-width: 481px){
+@media  only screen and (max-width: 681px){
   #multiscroll{
     display: none;
   }
+  #mobile-version{
+    display: block;
+  }
+  .earphones{
+      background-image: url('../img/OpI/ear1.png') !important;
+      background-size: cover !important;
+      background-color: #b3b3b3 !important;
+      z-index: -1;
+  }
+  .ebutton{
+    margin-top: 20%;
+      color: #d4e6f1;
+      font-size: 3vh;
+      font-family: "raleway-regular", arial;
+      background-color: Transparent;
+  }
+  .eheading{
+      padding-top: 20%;
+      margin-left:20%;;
+      font-size: 8vh;
+      color: #d4e6f1;
+      text-shadow: firebrick;
+  }
+
+  .car-chargers{
+      background-image: url('../img/OpI/car112.png')  !important;
+      background-size: cover !important;
+      background-color: #b3b3b3;
+      text-align: center
+  }
+
+  /*Earphones end*/
+  /* Car Chargers*/
+
+  .cheading{
+      font-size: 8vh;
+      color:  #91cac3;
+      text-shadow: firebrick;
+  }
+  .cbutton{
+      color: #91cac3;
+      font-size: 3vh;
+      font-family: "raleway-regular", arial;
+      background-color: Transparent;
+  }
+  /*Car Chargers end*/
+
 }

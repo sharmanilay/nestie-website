@@ -1,4 +1,6 @@
 $(document).ready(function() {
+	if(window.innerWidth>=680){
+		console.log("Hell no!");
 	$('#multiscroll').multiscroll({
 		verticalCentered : true,
 		scrollingSpeed: 700,
@@ -22,7 +24,7 @@ $(document).ready(function() {
 
 		//responsive
 		responsiveWidth: 900,
-		
+
 		afterResponsive: function(){
 			console.log("after responsive...");
 		},
@@ -54,6 +56,7 @@ $(document).ready(function() {
 		afterRender: function(){},
 		afterResize: function(){},
 	});
+}
 });
 
 function egallery(){
