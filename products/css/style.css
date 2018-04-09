@@ -167,8 +167,8 @@ Step content - basic style
 .cd-step-content .options-list > li {
   /* basic style for list of options */
   border: 2px solid #EDEDED;
-  border-radius: 4px;
-  margin-bottom: 20px;
+  border-radius: 40px;
+  margin-bottom: 0px;
   cursor: pointer;
   -webkit-transition: border-color .3s;
   transition: border-color .3s;
@@ -254,7 +254,7 @@ Step content - basic style
     font-size: 2rem;
   }
   .cd-step-content .options-list > li {
-    margin-bottom: 2%;
+    margin-bottom: 0%;
   }
   .cd-step-content .options-list.cd-col-2::after {
     clear: both;
@@ -262,18 +262,18 @@ Step content - basic style
     display: block;
   }
   .cd-step-content .options-list.cd-col-2 > li {
-    width: 48%;
+    width: 31%;
     float: left;
-    margin-right: 4%;
+    margin-right: 2%;
   }
   .cd-step-content .options-list.cd-col-2 > li:nth-of-type(2n) {
-    margin-right: 0;
+    margin-right: 2%;
   }
 }
 @media only screen and (min-width: 1024px) {
   .cd-step-content {
     /* this padding takes care of both top and bottom fixed navigations */
-    padding: 50px; 0 140px;
+    padding: 50px 0 140px;
     max-width: 1000px;
     margin: 0 auto;
   }
@@ -432,9 +432,11 @@ Models Step - style
 -------------------------------- */
 .cd-builder-steps .models-list {
   text-align: center;
+  width: 40%
+  height: 40%;
 }
 .cd-builder-steps .models-list > li {
-  padding: 2.7em 0;
+  padding: 15em 0;
 }
 .cd-builder-steps .models-list .name {
   display: block;
@@ -445,7 +447,7 @@ Models Step - style
 .cd-builder-steps .models-list img {
   display: block;
   max-width: 80%;
-  margin: 0.2em 1em 0.2em;
+  margin-left: 13%;
 }
 .cd-builder-steps .models-list .price {
   display: block;
@@ -615,7 +617,9 @@ Colors Step - style
   /* used to give background color to Color options */
   background-color: #FFFFFF;
 }
-
+[data-color="black"]{
+  background-color: #000000;
+}
 [data-color="grey"] {
   background-color: #303539;
 }
