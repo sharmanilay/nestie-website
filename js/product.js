@@ -66,5 +66,5 @@ function cgallery(){
 	location.href = 'products/carchargers.html';
 }
 function cableGallery(){
-	location.href = 'cablegallery.html';
+	location.href = 'products/cables.html';
 }
