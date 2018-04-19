@@ -634,7 +634,12 @@ Colors Step - style
 [data-color="perl"] {
   background-color: #d1d1d1;
 }
-
+[data-color="green"]{
+  background-color: #5bad3b;
+}
+[data-color="golden"]{
+  background-color: #f1d896;
+}
 /* --------------------------------
 
 Accessories Step - style
