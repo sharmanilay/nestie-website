@@ -640,6 +640,21 @@ Colors Step - style
 [data-color="golden"]{
   background-color: #f1d896;
 }
+[data-color="blue"]{
+  background-color: #7cbacf;
+}
+[data-color="pink"]{
+  background-color: #fbb1ca;
+}
+[data-color="yellow"]{
+  background-color: #dfc238;
+}
+[data-color="brown"]{
+  background-color: #57281E;
+}
+[data-color="purple"]{
+  background-color: #39375D;
+}
 /* --------------------------------
 
 Accessories Step - style
