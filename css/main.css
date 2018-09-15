@@ -1,594 +1,112 @@
-
-/*  Fonts  */
-@font-face {
-    font-family: 'raleway-regular';
-    src: url('../fonts/raleway-regular.eot');
-    src: url('../fonts/raleway-regular.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/raleway-regular.woff') format('woff'),
-         url('../fonts/raleway-regular.ttf') format('truetype'),
-         url('../fonts/raleway-regular.svg#raleway-regular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'raleway-semibold';
-    src: url('../fonts/raleway-semibold.eot');
-    src: url('../fonts/raleway-semibold.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/raleway-semibold.woff') format('woff'),
-         url('../fonts/raleway-semibold.ttf') format('truetype'),
-         url('../fonts/raleway-semibold.svg#raleway-semibold') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'raleway-bold';
-    src: url('../fonts/raleway-bold.eot');
-    src: url('../fonts/raleway-bold.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/raleway-bold.woff') format('woff'),
-         url('../fonts/raleway-bold.ttf') format('truetype'),
-         url('../fonts/raleway-bold.svg#raleway-bold') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-
-/*  General CSS*/
-body{
-    background: #fff;
-    position: relative;
-}
-
-.logo{
-    padding-top: 0.5vh;
-    height: 6vh;
-    width: 30vh;
-}
-.color{
-    color: #f7ff8d;
-    padding-bottom: 2.5%;
-    font-size: 5.7vh;
-}
-.color{
-  color: #fff;
-}
-.container-fluid {
-    padding: 0% 0% 0% 0%;
-    position: relative !important;
-}
-.section{
-    text-align:center;
-    overflow: hidden;
-  }
-
-  #myVideo{
-    position: relative;
-    right: 0;
-    bottom: 0;
-    top:0;
-    right:0;
-    width: 100%;
-    height: 100%;
-    background-size: 100% 100%;
-    background-color: black; /* in case the video doesn't fit the whole page*/
-     
-      background-position: center center;
-      background-size: contain;
-      object-fit: cover; /*cover video background */
-      z-index:3;
-  }
-
-
-
-  /* Layer with position absolute in order to have it over the video
-  * --------------------------------------- */
-  #section0 .layer{
-    position: absolute;
-    z-index: 4;
-    width: 100%;
-    left: 0;
-    top: 43%;
-
-    /* 
-    * Preventing flicker on some browsers 
-    * See http://stackoverflow.com/a/36671466/1081396  or issue #183
-    */
-    -webkit-transform: translate3d(0,0,0);
-    -ms-transform: translate3d(0,0,0);
-    transform: translate3d(0,0,0);
-  }
-
-  /*solves problem with overflowing video in Mac with Chrome */
-  #section0{
-    overflow: hidden;
-  }
-
-
-  /* Bottom menu
-  * --------------------------------------- */
-  #infoMenu li a {
-    color: #fff;
-  }
-
-
-  /* Hiding video controls 
-  * See: https://css-tricks.com/custom-controls-in-html5-video-full-screen/
-  * --------------------------------------- */
-  video::-webkit-media-controls {
-    display:none !important;
-  }
-
-
-
-h1, h2, h3, h4, h5 ,h6{
-    color: #626262;
-    font-family: "raleway-regular", arial;
-    letter-spacing: 1px;
-}
-
-h1              { font-size: 2em; margin: .67em 0 }
-h2              { font-size: 1.5em; margin: .75em 0 }
-h3              { font-size: 1.17em; margin: .83em 0 }
-h5              { font-size: .83em; margin: 1.5em 0 }
-h6              { font-size: .75em; margin: 1.67em 0 }
+@font-face{font-family:'raleway-regular';src:url('../fonts/raleway-regular.eot');src:url('../fonts/raleway-regular.eot?#iefix') format('embedded-opentype'),
+url('../fonts/raleway-regular.woff') format('woff'),
+url('../fonts/raleway-regular.ttf') format('truetype'),
+url('../fonts/raleway-regular.svg#raleway-regular') format('svg');font-weight:normal;font-style:normal;}
+@font-face{font-family:'raleway-semibold';src:url('../fonts/raleway-semibold.eot');src:url('../fonts/raleway-semibold.eot?#iefix') format('embedded-opentype'),
+url('../fonts/raleway-semibold.woff') format('woff'),
+url('../fonts/raleway-semibold.ttf') format('truetype'),
+url('../fonts/raleway-semibold.svg#raleway-semibold') format('svg');font-weight:normal;font-style:normal;}
+@font-face{font-family:'raleway-bold';src:url('../fonts/raleway-bold.eot');src:url('../fonts/raleway-bold.eot?#iefix') format('embedded-opentype'),
+url('../fonts/raleway-bold.woff') format('woff'),
+url('../fonts/raleway-bold.ttf') format('truetype'),
+url('../fonts/raleway-bold.svg#raleway-bold') format('svg');font-weight:normal;font-style:normal;}
+body{background:#fff;position:relative;}
+.logo{padding-top:0.5vh;height:6vh;width:30vh;}
+.color{color:#f7ff8d;padding-bottom:2.5%;font-size:5.7vh;}
+.color{color:#fff;}
+.container-fluid{padding:0% 0% 0% 0%;position:relative !important;}
+.section{text-align:center;overflow:hidden;}
+#myVideo{position:relative;right:0;bottom:0;top:0;right:0;width:100%;height:100%;background-size:100% 100%;background-color:black;background-position:center center;background-size:contain;object-fit:cover;z-index:3;}
+#section0 .layer{position:absolute;z-index:4;width:100%;left:0;top:43%;-webkit-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0);transform:translate3d(0,0,0);}
+#section0{overflow:hidden;}
+#infoMenu li a{color:#fff;}
+video::-webkit-media-controls{display:none !important;}
+h1, h2, h3, h4, h5 ,h6{color:#626262;font-family:"raleway-regular", arial;letter-spacing:1px;}
+h1{font-size:2em;margin:.67em 0}
+h2{font-size:1.5em;margin:.75em 0}
+h3{font-size:1.17em;margin:.83em 0}
+h5{font-size:.83em;margin:1.5em 0}
+h6{font-size:.75em;margin:1.67em 0}
 h1, h2, h3, h4,
-h5, h6          { font-weight: bolder }
-
-.clearfix:before,  
-.clearfix:after {  
-    content: " ";  
-    display: table;  
-}  
-.clearfix:after {  
-    clear: both;  
-}  
- 
-.clearfix {  
-    *zoom: 1;  
+h5, h6{font-weight:bolder}
+.clearfix:before,
+.clearfix:after{content:" ";display:table;}
+.clearfix:after{clear:both;}
+.clearfix{*zoom:1;}
+.affix{padding:0px;-webkit-transition:padding 0.2s linear;-moz-transition:padding 0.2s linear;-o-transition:padding 0.2s linear;transition:padding 0.2s linear;}
+.affix-top{padding-top:15px;padding-bottom:15px;-webkit-transition:padding 0.5s linear;-moz-transition:padding 0.5s linear;-o-transition:padding 0.5s linear;transition:padding 0.5s linear;}
+.nav{padding:5px 0px 5px 0px;}
+.navbar{border-radius:0px;}
+.navbar-brand{padding-bottom:1%;}
+.nestylogo img{width:3%;height:3%;}
+.navbar-cont{margin-bottom:10px !important;}
+.nav{margin-left:65%;}
+.nav-item a{font-size:1.17em;color:#f7ff8d;}
+.nav li a:hover{background-color:#110f07;}
+.nav-item a:active{background-color:#110f07;}
+.nav-item a:hover{color:#fff;}
+.dropdown-toggle{font-size:1.17em;color:#f7ff8d;}
+.dropdown-toggle a:active{background-color:#110f07;}
+.dropdown-menu{color:#f7ff8d;background-color:#626262;}
+.video{margin-bottom:0!important;z-index:-101;}
+.caption{padding-top:150px;}
+.col-lg-4{padding-left:6%;padding-right:6%;text-align:center;}
+.imageas{height:50%;width:100%;background-image:url("../img/backnesty.png");background-size:auto auto;background-repeat:no-repeat;}
+.keyart, .keyart_layer{height:1000px;}
+#parallax{display:block;}
+#nonparallax{display:block;}
+.keyart{position:relative;z-index:-10;}
+.keyart,.keyart_layer{height:100px;}
+.keyart_layer{background-position:bottom center;background-repeat:repeat-x;background-size:auto 1038px;width:100%;min-height:100%;position:fixed;}
+.keyart_layer.parallax{background-position:center;background-repeat:repeat-x;background-size:auto 1038px;width:100%;min-height:100%;position:absolute;}
+#keyart-0{background-image:url('../images/parallax/parallax0.png');background-color:#ff5249;}
+#keyart-1{background-image:url('../images/parallax/parallax1.png');}
+#keyart-2{background-image:url('../images/parallax/parallax2.png');}
+#keyart-3{background-image:url('../images/parallax/parallax3.png');}
+#keyart-4{background-image:url('../images/parallax/parallax4.png');}
+#keyart-5{background-image:url('../images/parallax/parallax5.png');}
+#keyart-6{background-image:url('../images/parallax/parallax6.png');}
+#keyart-8{background-image:url('../images/parallax/parallax8.png');}
+#keyart-scrim{background-color:#1B0000;opacity:0;}
+@media (min-width:601px){#nonparallax{display:none;}
+#parallax{display:block;}
 }
-
-
-/*Navigation Bar*/
-.affix {
-    padding:0px;
-    -webkit-transition:padding 0.2s linear;
-    -moz-transition:padding 0.2s linear;  
-    -o-transition:padding 0.2s linear;         
-    transition:padding 0.2s linear;  
-  
-  }
-  
-  .affix-top {
-    padding-top:15px;
-    padding-bottom:15px;
-    -webkit-transition:padding 0.5s linear;
-    -moz-transition:padding 0.5s linear;  
-    -o-transition:padding 0.5s linear;         
-    transition:padding 0.5s linear;  
-  }
-  
-.nav{
-  padding: 5px 0px 5px 0px;
-}
-.navbar{
-    border-radius: 0px;
-}
-.navbar-brand{
-    padding-bottom: 1%;
-}
-.nestylogo img{
-    width: 3%;
-    height: 3%;
-}
-.navbar-cont{
-  margin-bottom: 10px !important;
-}
-.nav{
-    margin-left: 65%;
-}
-.nav-item a{
-    font-size: 1.17em;
-    color:#f7ff8d;
-}
-.nav li a:hover{
-        background-color:#110f07;
-}
-.nav-item a:active{
-    background-color: #110f07;
-}
-.nav-item a:hover{
-    color: #fff;
-}
-.dropdown-toggle{
-    font-size: 1.17em;
-    color:#f7ff8d;
-}
-.dropdown-toggle a:active{
-    background-color: #110f07;
-}
-.dropdown-menu{
-    color: #f7ff8d;
-    background-color: #626262;
-}
-/*Navigation Bar Ends*/
-
-
-
-
-.video{
-  margin-bottom: 0!important;
- 
-  z-index: -101;
-}
-
-
-.caption{
-  padding-top: 150px;
-}
-
-
-
-
-/*Listen Power Connect Section */
-
-.col-lg-4{
-  padding-left: 6%;
-  padding-right: 6%;
-  text-align: center;
-}
-.imageas{
-    height: 50%;
-    width: 100%;
-    background-image: url("../img/backnesty.png");
-    background-size: auto auto;
-    background-repeat: no-repeat;
-}
-/*Listen Power Connect Section  Ends*/
-/* PARALLAX */
-
-.keyart, .keyart_layer {
-	height: 1000px;
-}
-
-#parallax {
-	display: block;
-}
-#nonparallax {
-	display: block;
-}
-
-
-.keyart {
-	position: relative;
-	z-index: -10;
-}
-.keyart,.keyart_layer{
-    height: 100px;
-}
-
-.keyart_layer {
-    background-position: bottom center;
-    background-repeat: repeat-x;
-    background-size: auto 1038px;
-	width: 100%;
-    min-height: 100%;
-	position: fixed;
-}
-.keyart_layer.parallax {
-
-    background-position: center;
-    background-repeat: repeat-x;    
-    background-size: auto 1038px;
-	width: 100%;
-    min-height: 100%;
-	position: absolute;
-}
-	#keyart-0 {
-		background-image: url('../images/parallax/parallax0.png');
-		background-color: #ff5249;
-	}
-	#keyart-1 {
-		background-image: url('../images/parallax/parallax1.png');
-	}
-	#keyart-2 {
-		background-image: url('../images/parallax/parallax2.png');
-	}
-	#keyart-3 {
-		background-image: url('../images/parallax/parallax3.png');
-	}
-	#keyart-4 {
-		background-image: url('../images/parallax/parallax4.png');
-	}
-	#keyart-5 {
-		background-image: url('../images/parallax/parallax5.png');
-	}
-	#keyart-6 {
-		background-image: url('../images/parallax/parallax6.png');
-	}
-	#keyart-8 {
-		background-image: url('../images/parallax/parallax8.png');
-	}
-	#keyart-scrim {
-		background-color: #1B0000;
-		opacity: 0;
-	}
-
-
-
-/********************/
-/********************/
-/* ENABLES PARALLAX */
-/********************/
-/********************/
-
-@media (min-width: 601px) {
-
-	#nonparallax {
-		display: none;
-	}
-	#parallax {
-		display: block;
-	}
-
-}
-
-/* PARALLAX */
-
-	.keyart, .keyart_layer {
-		height: 700px;
-	}
-
-	.keyart_layer {
-		position: absolute;
-		background-size: auto auto;
-	}
-/*End Parallax*/
-
-
-
-
-
-/*    testimonials    */
-.btx{
-  margin-bottom: 20px;
-  background-color: #252727 !important;
-}
-.btn{
-  margin-top: 20px;
-  background-color: #f6dd4d;
-}
-
-.testimonials{
-    position: relative;
-    padding: 2% 1% 1% 1%;
-}
-
-.testimonials ul{
-    margin-top: 70px;
-    list-style: none;
-    float: center;
-}
-
-.testimonials ul li{
-    display: inline-block;
-    float: center;
-    width: 313px;
-}
-
-.testimonials ul li:first-child{
-    margin-left: 0;
-}
-
-.testimonials ul li .quotes{
-    margin-right: 10px;
-}
-
-.testimonials ul li p{
-    color: #838181;
-    font-family: "raleway-regular";
-    font-size: 16px;
-    line-height: 28px;
-    letter-spacing: .5px;
-    padding-bottom: 30px;
-    margin-bottom: 20px;
-    border-bottom: 1px solid #ecebeb;
-    position: fixed;
-}
-
-.testimonials ul li p .triangle{
-    display: block;
-    width: 10px;
-    height: 5px;
-    background: url('../img/testimonial_triangle.png') no-repeat;
-    position: absolute;
-    bottom: -5px;
-    left: 40px;
-}
-
-.testimonials ul li .client{
-    margin-left: 20px;
-}
-
-.testimonials ul li .client img.avatar{
-    float: left;
-    margin-right: 20px;
-    -webkit-border-radius: 100px;
-    -moz-border-radius: 100px;
-    -o-border-radius: 100px;
-    border-radius: 100px;
-}
-
-.testimonials ul li .client .client_details{
-    float: left;
-}
-
-.testimonials ul li .client .client_details h4{
-    color: #7b7979;
-    font-family: "raleway-semibold";
-    font-size: 14px;
-    font-weight: bold;
-    margin: 0 0 10px 0;
-}
-
-.testimonials ul li .client .client_details h5{
-    color: #7b7979;
-    font-family: "raleway-regular";
-    font-size: 12px;
-    margin: 0;
-    font-weight: normal;
-}
-
-
-.testimonials ul li:first-child{
-    margin-left: 0;
-}
-/*products*/
-.fpheading{
-    margin-top: 0px;
-    padding: 1% 1% 1% 1%;
-    display: block;
-    min-width: 100%;
-    background-color: #110f07;
-}
-.fpheading h1{
-    color: #fffa67;
-    font-size: 8vh;
-    font-family: "raleway-regular", arial;
-}
-
-.carousel {
-    background-color: transparent;
-    height: 600px;
-    width: 100%;
-}
-.pro {
-    width: 80%;
-    margin-left: 9%; 
-}
-
-.carousel-caption {
-    width: 30%;
-    margin-left: 40%;
-    margin-bottom: 10%;;
-    z-index: 10;
-    font-size: 3vh;
-  }
-  .carousel-caption h2{
-    color: #f7ff8d;
-  }
-  
-.slideshow1{
-    background-color: #110f07; 
-    
-    /*background-image: url('https://static.pexels.com/photos/255527/pexels-photo-255527.jpeg');*/
-    background-size: cover;
-    background-position: center;
-   
-    text-align: center;
-}
-  
-  .carousel .item {
-    height: 600px;
-    background-image: url('https://truenaturepharma.com/wp-content/uploads/2017/03/white-gradient-2.jpg');
-  }
-  .carousel-inner > .item > img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    height: 600px;
-  }
-  
-
-.fproducts{
-  background-color: white;
-  z-index: 10000;
-  position: relative;
-  padding-top: 2% 1% 1% 1%;
-}
-.row{
-  z-index: 100001;
-}
-
-/*product end*/
-
-
-/*    footer    */
-.button1{
-  margin-left: 39%;
-  background-color: Transparent;
-  border-color: transparent;
-  color:#f7ff8d;
-}
-footer{
-    padding: 35px 0;
-    padding-right: 35px;
-    margin: 0;
-    background-color: #110f07;
-    position: fixed bottom center;
-    left: 0;
-    right: 0;
-    bottom: 0px !important;
-    height: auto;
-}
-
-footer .footer_logo{
-    float: left;
-}
-
-footer .rights p{
-    float: left;
-    color: #f7ff8d;
-    font-family: "raleway-regular";
-    font-size: 13px;
-    margin: 5px 0 0 40px; 
-}
-
-footer .rights p a{
-    color: #f7ff8d;
-    font-family: "raleway-semibold";
-    font-size: 13px;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-footer nav ul{
-    float: right;
-    overflow: hidden;
-    list-style: none;
-    margin-top: 5px; 
-}
-
-footer nav ul li{
-    float: left;
-    margin-left: 25px;
-}
-
-footer nav ul li a{
-    color: #f7ff8d;
-    font-family: "raleway-regular";
-    font-size: 13px;
-    text-decoration: none;
-
-    transition:all .2s linear;
-    -webkit-transition:all .2s linear;
-    -moz-transition:all .2s linear;
-    -o-transition:all .2s linear;
-}
-
-footer nav ul li a:hover{
-    text-decoration: none;
-    color: #616161;
-}
-.footer-content{
-    color: #f7ff8d;
-    text-align: center;
-}
-.footer-content h4,h6{
-    color: #f7ff8d;
-}
+.keyart, .keyart_layer{height:700px;}
+.keyart_layer{position:absolute;background-size:auto auto;}
+.btx{margin-bottom:20px;background-color:#252727 !important;}
+.btn{margin-top:20px;background-color:#f6dd4d;}
+.testimonials{position:relative;padding:2% 1% 1% 1%;}
+.testimonials ul{margin-top:70px;list-style:none;float:center;}
+.testimonials ul li{display:inline-block;float:center;width:313px;}
+.testimonials ul li:first-child{margin-left:0;}
+.testimonials ul li .quotes{margin-right:10px;}
+.testimonials ul li p{color:#838181;font-family:"raleway-regular";font-size:16px;line-height:28px;letter-spacing:.5px;padding-bottom:30px;margin-bottom:20px;border-bottom:1px solid #ecebeb;position:fixed;}
+.testimonials ul li p .triangle{display:block;width:10px;height:5px;background:url('../img/testimonial_triangle.png') no-repeat;position:absolute;bottom:-5px;left:40px;}
+.testimonials ul li .client{margin-left:20px;}
+.testimonials ul li .client img.avatar{float:left;margin-right:20px;-webkit-border-radius:100px;-moz-border-radius:100px;-o-border-radius:100px;border-radius:100px;}
+.testimonials ul li .client .client_details{float:left;}
+.testimonials ul li .client .client_details h4{color:#7b7979;font-family:"raleway-semibold";font-size:14px;font-weight:bold;margin:0 0 10px 0;}
+.testimonials ul li .client .client_details h5{color:#7b7979;font-family:"raleway-regular";font-size:12px;margin:0;font-weight:normal;}
+.testimonials ul li:first-child{margin-left:0;}
+.fpheading{margin-top:0px;padding:1% 1% 1% 1%;display:block;min-width:100%;background-color:#110f07;}
+.fpheading h1{color:#fffa67;font-size:8vh;font-family:"raleway-regular", arial;}
+.carousel{background-color:transparent;height:600px;width:100%;}
+.pro{width:80%;margin-left:9%;}
+.carousel-caption{width:30%;margin-left:40%;margin-bottom:10%;;z-index:10;font-size:3vh;}
+.carousel-caption h2{color:#f7ff8d;}
+.slideshow1{background-color:#110f07;background-size:cover;background-position:center;text-align:center;}
+.carousel .item{height:600px;background-image:url('https://truenaturepharma.com/wp-content/uploads/2017/03/white-gradient-2.jpg');}
+.carousel-inner > .item > img{position:absolute;top:0;left:0;min-width:100%;height:600px;}
+.fproducts{background-color:white;z-index:10000;position:relative;padding-top:2% 1% 1% 1%;}
+.row{z-index:100001;}
+.button1{margin-left:39%;background-color:Transparent;border-color:transparent;color:#f7ff8d;}
+footer{padding:35px 0;padding-right:35px;margin:0;background-color:#110f07;position:fixed bottom center;left:0;right:0;bottom:0px !important;height:auto;}
+footer .footer_logo{float:left;}
+footer .rights p{float:left;color:#f7ff8d;font-family:"raleway-regular";font-size:13px;margin:5px 0 0 40px;}
+footer .rights p a{color:#f7ff8d;font-family:"raleway-semibold";font-size:13px;font-weight:bold;text-decoration:none;}
+footer nav ul{float:right;overflow:hidden;list-style:none;margin-top:5px;}
+footer nav ul li{float:left;margin-left:25px;}
+footer nav ul li a{color:#f7ff8d;font-family:"raleway-regular";font-size:13px;text-decoration:none;transition:all .2s linear;-webkit-transition:all .2s linear;-moz-transition:all .2s linear;-o-transition:all .2s linear;}
+footer nav ul li a:hover{text-decoration:none;color:#616161;}
+.footer-content{color:#f7ff8d;text-align:center;}
+.footer-content h4,h6{color:#f7ff8d;}
