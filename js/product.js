@@ -1,6 +1,6 @@
 $(document).ready(function() {
+	$('.carousel').carousel();
 	if(window.innerWidth>=680){
-		console.log("Hell no!");
 	$('#multiscroll').multiscroll({
 		verticalCentered : true,
 		scrollingSpeed: 700,
@@ -21,10 +21,8 @@ $(document).ready(function() {
 		scrollOverflowOptions: null,
 		keyboardScrolling: true,
 		touchSensitivity: 5,
-
 		//responsive
 		responsiveWidth: 900,
-
 		afterResponsive: function(){
 			console.log("after responsive...");
 		},

@@ -124,7 +124,7 @@
 
 /*Cables*/
 .cables{
-    background-image: url('../img/OpI/cable1.svg');
+    background-image: url('../img/OpI/cable1.jpg');
     background-size: cover;
     background-position: 0%;
     background-color: #b3b3b3;
@@ -242,7 +242,7 @@
     background-color: Transparent;
   }
   .cables{
-      background-image: url('../img/OpI/cable1.svg') !important;
+      background-image: url('../img/OpI/cable1.jpg') !important;
       background-size: cover !important;
       background-color: #b3b3b3;
   }
