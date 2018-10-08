@@ -1,6 +1,4 @@
-$(window).ready(function() {
-    $('#loading').hide();
-});
+
 $(window).scroll(function() {
   if ($(document).scrollTop() > 450) {
     $('.navbar').addClass('navbar-scroll');
