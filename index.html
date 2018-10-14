@@ -15,14 +15,32 @@
 			$(window).on("load", function() {
 					$("#loading").remove();
 			});
+			$('#carouselExample').on('slide.bs.carousel', function (e) {
+			    var $e = $(e.relatedTarget);
+			    var idx = $e.index();
+			    var itemsPerSlide = 4;
+			    var totalItems = $('.carousel-item').length;
+
+			    if (idx >= totalItems-(itemsPerSlide-1)) {
+			        var it = itemsPerSlide - (totalItems - idx);
+			        for (var i=0; i<it; i++) {
+			            // append slides to end
+			            if (e.direction=="left") {
+			                $('.carousel-item').eq(i).appendTo('.carousel-inner');
+			            }
+			            else {
+			                $('.carousel-item').eq(0).appendTo('.carousel-inner');
+			            }
+			        }
+			    }
+			});
 	</script>
 	<script type="text/javascript" src="js/main.js"></script>
 
 </head>
 <body>
-	<div id="loading"></div>
 	<div class="container-fluid">
-				<div id="header">
+				<!--<div id="header">
 					<div id="navbar" class="navbar-cont">
 						<div>
 							<nav class="navbar fixed-top navbar-expand-lg navbar-dark" data-spy="affix" data-offset-top="100" style="background-color: black;">
@@ -50,8 +68,24 @@
 							</nav>
 						</div>
 					</div>
-				</div>
-			<div>
+				</div>-->
+				<header id="header" class="header" data-sticky-class="not-dark">
+					<div id="header-wrap">
+						<div class="container clearfix">
+							<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+							<div id="logo"> <a href="index.html" class="standard-logo"><img src="img/logo.jpg" alt=""></a></div>
+							<nav id="primary-menu" class="style-ecommerce">
+								<ul>
+									<li class="mega-menu"><a href="products.html"><div>Products</div></a></li>
+									<li><a href="gallery.html"><div>Gallery</div></a></li>
+									<li class="mega-menu"><a href="#" data-scrollto="#gallery"><div>Gallery</div></a></li>
+									<li class="mega-menu"><a href="support.html"><div>Support</div></a></li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</header>
+				<div>
 				<div id="mainCarousel" class="carousel slide" data-ride="carousel">
 						<div class="carousel-inner">
 							<div class="carousel-item">
@@ -110,7 +144,6 @@
 											</div>
 
 										</div>
-
 										<a class="carousel-control-prev" href="#myCarousel1" role="button" data-slide="prev">
 																<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 																<span class="sr-only">Previous</span>
@@ -162,57 +195,141 @@
 													  </div>
 													</a>
 					</div>
-						<div class="box-container">
-									<h2 class="section-title">Featured Products</h2>
-									<p class="section-subtitle">
-										Take a look at some of our most popular and highest rated products.
-										We are confident you will love them.</p>
-										<div class="container-fluid container-scrolling">
-												<div class="container featured-scrolling-container">
+					<div class="box-container">
+					      <h2 class="section-title">Featured Products</h2>
+					      <p class="section-subtitle">
+					        Take a look at some of our most popular and highest rated products.
+					        We are confident you will love them.</p>
+					        <div class="container-scrolling">
+					            <div class="container-fluid featured-scrolling-container">
 
-													<a href="/products/cables/audio-cable-1-8-meters" class="card-small card-animation home-featured-product">
-												<img src="img/products/f1.jpg" class='card-image card-image responsive-image' />
+					              <a href="/products/cables/audio-cable-1-8-meters" class="card-small card-animation home-featured-product">
+					            <img src="img/products/f1.jpg" class='card-image card-image responsive-image' />
 
-												<div class="card-text card-text">
-													<h3 class="card-subtitle card-subtitle">Speakers</h3>
-													<h2 class="card-title card-title">Bluetooth Speaker</h2>
-													<!--<span class="card-price card-price">Rs. 499</span>-->
-												</div>
-													</a>
-															<a href="/products/cables/hdmi-cable-2-meters" class="card-small card-animation home-featured-product">
-														<img src="img/products/f2.jpg" class='card-image card-image responsive-image' />
+					            <div class="card-text card-text">
+					              <h3 class="card-subtitle card-subtitle">Speakers</h3>
+					              <h2 class="card-title card-title">Bluetooth Speaker</h2>
+					              <!--<span class="card-price card-price">Rs. 499</span>-->
+					            </div>
+					              </a>
+					                  <a href="/products/cables/hdmi-cable-2-meters" class="card-small card-animation home-featured-product">
+					                <img src="img/products/f2.jpg" class='card-image card-image responsive-image' />
 
-														<div class="card-text card-text">
-															<h3 class="card-subtitle card-subtitle">Speakers</h3>
-															<h2 class="card-title card-title">Bluetooth Speaker 2</h2>
-														 <!-- <span class="card-price card-price">Rs. 599</span>-->
-														</div>
-													</a>
-															<a href="/products/chargers/wall-charger-1-port" class="card-small card-animation home-featured-product">
-														<img src="img/products/f3.jpg" class='card-image card-image responsive-image' />
+					                <div class="card-text card-text">
+					                  <h3 class="card-subtitle card-subtitle">Speakers</h3>
+					                  <h2 class="card-title card-title">Bluetooth Speaker 2</h2>
+					                 <!-- <span class="card-price card-price">Rs. 599</span>-->
+					                </div>
+					              </a>
+					                  <a href="/products/chargers/wall-charger-1-port" class="card-small card-animation home-featured-product">
+					                <img src="img/products/f3.jpg" class='card-image card-image responsive-image' />
 
-														<div class="card-text card-text">
-															<h3 class="card-subtitle card-subtitle">Cables</h3>
-															<h2 class="card-title card-title">USB Cables</h2>
-														 <!-- <span class="card-price card-price">Rs. 549</span>-->
-														</div>
-													</a>
-															<a href="/products/chargers/car-charger-1-port-quick-charge" class="card-small card-animation home-featured-product">
-														<img src="img/products/f4.jpg" class='card-image card-image responsive-image' />
+					                <div class="card-text card-text">
+					                  <h3 class="card-subtitle card-subtitle">Cables</h3>
+					                  <h2 class="card-title card-title">USB Cables</h2>
+					                 <!-- <span class="card-price card-price">Rs. 549</span>-->
+					                </div>
+					              </a>
+					                  <a href="/products/chargers/car-charger-1-port-quick-charge" class="card-small card-animation home-featured-product">
+					                <img src="img/products/f4.jpg" class='card-image card-image responsive-image' />
 
-														<div class="card-text card-text">
-															<h3 class="card-subtitle card-subtitle">Chargers</h3>
-															<h2 class="card-title card-title">Car Quick Charger</h2>
-														 <!-- <span class="card-price card-price">Rs. 699</span>-->
-														</div>
-													</a>
-												</div>
-										</div>
-						</div>
+					                <div class="card-text card-text">
+					                  <h3 class="card-subtitle card-subtitle">Chargers</h3>
+					                  <h2 class="card-title card-title">Car Quick Charger</h2>
+					                 <!-- <span class="card-price card-price">Rs. 699</span>-->
+					                </div>
+					              </a>
+					            </div>
+					        </div>
+					</div>
+
+
 
 				</div>
 			</div>
-		<footer>
+			<footer class="footer">
+			  <div class="container">
+			    <div class="contact-container">
+			      <h3 class="contact-title">We're willingly accessible</h3>
+			      <p class="contact-text">Send us a message and we'll get back to you</p>
+
+			      <ul class="contact-option-list">
+			        <li class="contact-option contact-email">
+			          <strong class="contact-label">Email</strong>
+			          <a href="mailto:support@mivi.in" class="contact-definition">support@mivi.in</a>
+			        </li>
+
+			        <li class="contact-option contact-phone">
+			          <strong class="contact-label">Call</strong>
+			          <span class="contact-definition">040-39564567</span>
+			          <span class="contact-info">(Mon-Sat, 10:30am-6:30pm)</span>
+			        </li>
+
+			        <li class="contact-option contact-chat">
+			          <strong class="contact-label">Live Chat</strong>
+			          <span class="contact-definition">Offline</span>
+			        </li>
+
+			        <li class="contact-option contact-whatsapp">
+			          <strong class="contact-label">Whatsapp</strong>
+			          <a href="https://api.whatsapp.com/send?phone=+918099973333&text=Hi!" class="contact-definition">+91 8099973333</a>
+			        </li>
+
+			        <li class="contact-option contact-facebook">
+			          <strong class="contact-label">Facebook</strong>
+			          <a href="https://www.messenger.com/t/mivi.official" class="contact-definition">@miviofficial</a>
+			        </li>
+			      </ul>
+			    </div>
+
+			    <nav class="footer-menu">
+			      <h3 class="footer-menu-title">Company</h3>
+			      <ul class="footer-menu-list">
+			        <li class="footer-menu-item"><a href="https://support.mivi.in/hc/en-us/articles/360000964269-Contact-Us">Contact Us</a></li>
+			        <li class="footer-menu-item"><a href="https://support.mivi.in/hc/en-us">Support</a></li>
+			        <li class="footer-menu-item"><a href="/warranty/register">Register Your Warranty</a></li>
+			        <li class="footer-menu-item"><a href="https://support.mivi.in/hc/en-us/articles/360000964249-Terms-Conditions">Terms &amp; Conditions</a></li>
+			        <li class="footer-menu-item"><a href="https://support.mivi.in/hc/en-us/articles/360000562469-Order-Cancellation-Returns-and-Refund-Policy">Returns &amp; Cancellation</a></li>
+			        <li class="footer-menu-item"><a href="https://support.mivi.in/hc/en-us/articles/115004587745-Standard-Shipping-and-Delivery-speeds">Shipping &amp; Delivery</a></li>
+			      </ul>
+			    </nav>
+
+			    <nav class="footer-menu">
+			      <h3 class="footer-menu-title">Shop</h3>
+			      <ul class="footer-menu-list">
+			        <!-- <li class="footer-menu-item"><a href="#">Customer Service</a></li>
+			        <li class="footer-menu-item"><a href="#">Shipping FAQ</a></li>
+			        <li class="footer-menu-item"><a href="#">Service Centres</a></li>
+			        <li class="footer-menu-item"><a href="#">Warranty</a></li>
+			        <li class="footer-menu-item"><a href="#">Product Authentication</a></li> -->
+			          <li class="footer-menu-item"><a href="/products/cables">Cables</a></li>
+			          <li class="footer-menu-item"><a href="/products/chargers">Chargers</a></li>
+			          <li class="footer-menu-item"><a href="/products/speakers-and-earphones">Headphones</a></li>
+			          <li class="footer-menu-item"><a href="/products/phone-cases">Phone Cases</a></li>
+			      </ul>
+			    </nav>
+
+			    <div class="footer-copyright">
+			      <ul class="footer-social">
+			        <li class="footer-social-icon">
+			          <a class=" footer-social-icon-fb" href="https://www.facebook.com/mivi.official/">Facebook</a>
+			        </li>
+			        <li class="footer-social-icon">
+			          <a class="footer-social-icon-tw" href="https://twitter.com/MiviDigital">Twitter</a>
+			        </li>
+			        <li class="footer-social-icon">
+			          <a class="footer-social-icon-i" href="https://www.instagram.com/mividigital/">Instagram</a>
+			        <li class="footer-social-icon">
+			          <a class="footer-social-icon-yt" href="https://www.youtube.com/channel/UCHLJIjWSbFicL72lprhzmbw">Youtube</a>
+			        </li>
+			      </ul>
+			      <p class="footer-copyright-text">
+			        Copyright &copy; 2010-2018 Mivi. All Rights Reserved
+			      </p>
+			    </div>
+			  </div>
+			</footer>
+		<!--<footer>
 			<div class="wrapper">
 				<div class="rights">
 					<p>© Nesty Pvt. Ltd.</p>
@@ -242,7 +359,8 @@
 
 			</div>
 
-		</footer><!--  End footer  -->
+		</footer><!  End footer  -->
+
 	</div>
 </body>
 
