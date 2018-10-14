@@ -1,0 +1,47 @@
+<div class="box-container">
+      <h2 class="section-title">Featured Products</h2>
+      <p class="section-subtitle">
+        Take a look at some of our most popular and highest rated products.
+        We are confident you will love them.</p>
+        <div class="container-fluid container-scrolling">
+            <div class="container featured-scrolling-container">
+
+              <a href="/products/cables/audio-cable-1-8-meters" class="card-small card-animation home-featured-product">
+            <img src="img/products/f1.jpg" class='card-image card-image responsive-image' />
+
+            <div class="card-text card-text">
+              <h3 class="card-subtitle card-subtitle">Speakers</h3>
+              <h2 class="card-title card-title">Bluetooth Speaker</h2>
+              <!--<span class="card-price card-price">Rs. 499</span>-->
+            </div>
+              </a>
+                  <a href="/products/cables/hdmi-cable-2-meters" class="card-small card-animation home-featured-product">
+                <img src="img/products/f2.jpg" class='card-image card-image responsive-image' />
+
+                <div class="card-text card-text">
+                  <h3 class="card-subtitle card-subtitle">Speakers</h3>
+                  <h2 class="card-title card-title">Bluetooth Speaker 2</h2>
+                 <!-- <span class="card-price card-price">Rs. 599</span>-->
+                </div>
+              </a>
+                  <a href="/products/chargers/wall-charger-1-port" class="card-small card-animation home-featured-product">
+                <img src="img/products/f3.jpg" class='card-image card-image responsive-image' />
+
+                <div class="card-text card-text">
+                  <h3 class="card-subtitle card-subtitle">Cables</h3>
+                  <h2 class="card-title card-title">USB Cables</h2>
+                 <!-- <span class="card-price card-price">Rs. 549</span>-->
+                </div>
+              </a>
+                  <a href="/products/chargers/car-charger-1-port-quick-charge" class="card-small card-animation home-featured-product">
+                <img src="img/products/f4.jpg" class='card-image card-image responsive-image' />
+
+                <div class="card-text card-text">
+                  <h3 class="card-subtitle card-subtitle">Chargers</h3>
+                  <h2 class="card-title card-title">Car Quick Charger</h2>
+                 <!-- <span class="card-price card-price">Rs. 699</span>-->
+                </div>
+              </a>
+            </div>
+        </div>
+</div>
