@@ -42,6 +42,9 @@
   -webkit-transition: all 0.9s ease;
   transition: all 0.9s ease;
 }
+.pull-right{
+  margin-left: 45% !important;
+}
 #mainCarousel{
   margin-top: 13vh;
 }
@@ -53,6 +56,9 @@ nav.navbar.shrink {
   width: 300px;
   -webkit-transition: all 1.9s ease;
   transition: all 1.9s ease;
+}
+#nanoGallery4{
+  margin-top: 170px !important;
 }
 
 nav.navbar.shrink img{
@@ -443,7 +449,7 @@ footer nav ul li a:hover {
 
 .footer-menu-title {
   display: block;
-  font-size: 10px;
+  font-size: 16px;
   line-height: 15px;
   text-transform: uppercase;
   opacity: 0.5;

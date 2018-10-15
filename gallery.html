@@ -3,62 +3,147 @@
 
 <head>
   <title>Gallery</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <title>NESTY-Feels Like Flying</title>
+  <meta charset="utf-8">
+  <meta name="author" content="pixelhint.com">
+  <meta name="description" content="Powerbanks" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/nanogallery/5.10.3/css/nanogallery.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/nanogallery/5.10.3/css/themes/light/nanogallery_light.min.css" />
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/3.0.2/normalize.css" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script type="text/javascript" src="./js/jquery.js"></script>
   <link rel="stylesheet" type="text/css" href="css/main2.css">
   <link rel="stylesheet" type="text/css" href="css/main.css">
-  <link rel="stylesheet" type="text/css" href="css/gallery.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/nanogallery/5.10.3/jquery.nanogallery.min.js"></script>
+  <script>
+      $(document).ready(function(){
+          $(window).scroll(function(){
+            if (window.pageYOffset >= 280) {
+              $('#global-nav').addClass('shrink');
+            } else if (window.pageYOffset < 280) {
+              $('#global-nav').removeClass('shrink');
+            }
+          });
+          jQuery("#nanoGallery4").nanoGallery({
+          	items:[
+        			{ src: 'img1.jpg', srct: 'img1.jpg', title: 'image 01' },
+              { src: 'img2.jpg', srct: 'img2.jpg', title: 'image 01' },
+              { src: 'img3.jpg', srct: 'img3.jpg', title: 'image 01' },
+              { src: 'img4.jpg', srct: 'img4.jpg', title: 'image 01' },
+              { src: 'img5.jpg', srct: 'img5.jpg', title: 'image 01' },
+              { src: 'img6.jpg', srct: 'img6.jpg', title: 'image 01' },
+              { src: 'img7.jpg', srct: 'img7.jpg', title: 'image 01' },
+              { src: 'img8.jpg', srct: 'img8.jpg', title: 'image 01' },
+              { src: 'img9.jpg', srct: 'img9.jpg', title: 'image 01' },
+              { src: 'img10.jpg', srct: 'img10.jpg', title: 'image 01' },
+              { src: 'img11.jpg', srct: 'img11.jpg', title: 'image 01' },
+              { src: 'img12.jpg', srct: 'img12.jpg', title: 'image 01' },
+              { src: 'img13.jpg', srct: 'img13.jpg', title: 'image 01' },
+              { src: 'img14.jpg', srct: 'img14.jpg', title: 'image 01' },
+              { src: 'img15.jpg', srct: 'img15.jpg', title: 'image 01' },
+              { src: 'img16.jpg', srct: 'img16.jpg', title: 'image 01' },
+              { src: 'img17.jpg', srct: 'img17.jpg', title: 'image 01' },
+              { src: 'img18.jpg', srct: 'img18.jpg', title: 'image 01' },
+              { src: 'img19.jpg', srct: 'img19.jpg', title: 'image 01' },
+              { src: 'img20.jpg', srct: 'img20.jpg', title: 'image 01' },
+              { src: 'img21.jpg', srct: 'img21.jpg', title: 'image 01' },
+              { src: 'img22.jpg', srct: 'img22.jpg', title: 'image 01' },
+              { src: 'img23.jpg', srct: 'img23.jpg', title: 'image 01' },
+              { src: 'img24.jpg', srct: 'img24.jpg', title: 'image 01' },
+              { src: 'img25.jpg', srct: 'img25.jpg', title: 'image 01' },
+              { src: 'img26.jpg', srct: 'img26.jpg', title: 'image 01' },
+              { src: 'img27.jpg', srct: 'img27.jpg', title: 'image 01' },
+              { src: 'img28.jpg', srct: 'img28.jpg', title: 'image 01' },
+              { src: 'img29.jpg', srct: 'img29.jpg', title: 'image 01' },
+              { src: 'img30.jpg', srct: 'img30.jpg', title: 'image 01' },
+              { src: 'img31.jpg', srct: 'img31.jpg', title: 'image 01' },
+              { src: 'img32.jpg', srct: 'img32.jpg', title: 'image 01' },
+              { src: 'img33.jpg', srct: 'img33.jpg', title: 'image 01' },
+              { src: 'img34.jpg', srct: 'img34.jpg', title: 'image 01' },
+              { src: 'img35.jpg', srct: 'img35.jpg', title: 'image 01' },
+              { src: 'img36.jpg', srct: 'img36.jpg', title: 'image 01' },
+              { src: 'img37.jpg', srct: 'img37.jpg', title: 'image 01' },
+              { src: 'img38.jpg', srct: 'img38.jpg', title: 'image 01' },
+              { src: 'img39.jpg', srct: 'img39.jpg', title: 'image 01' },
+              { src: 'img40.jpg', srct: 'img40.jpg', title: 'image 01' },
+              { src: 'img41.jpg', srct: 'img41.jpg', title: 'image 01' },
+              { src: 'img42.jpg', srct: 'img42.jpg', title: 'image 01' },
+              { src: 'img43.jpg', srct: 'img43.jpg', title: 'image 01' },
+              { src: 'img44.jpg', srct: 'img44.jpg', title: 'image 01' },
+              { src: 'img45.jpg', srct: 'img45.jpg', title: 'image 01' },
+              { src: 'img46.jpg', srct: 'img46.jpg', title: 'image 01' },
+              { src: 'img47.jpg', srct: 'img47.jpg', title: 'image 01' },
+              { src: 'img48.jpg', srct: 'img48.jpg', title: 'image 01' },
+              { src: 'img49.jpg', srct: 'img49.jpg', title: 'image 01' },
+              { src: 'img50.jpg', srct: 'img50.jpg', title: 'image 01' },
+              { src: 'img51.jpg', srct: 'img51.jpg', title: 'image 01' },
+              { src: 'img52.jpg', srct: 'img52.jpg', title: 'image 01' },
+              { src: 'img53.jpg', srct: 'img53.jpg', title: 'image 01' },
+              { src: 'img54.jpg', srct: 'img54.jpg', title: 'image 01' },
+              { src: 'img55.jpg', srct: 'img55.jpg', title: 'image 01' },
+              { src: 'img56.jpg', srct: 'img56.jpg', title: 'image 01' },
+              { src: 'img57.jpg', srct: 'img57.jpg', title: 'image 01' },
+              { src: 'img58.jpg', srct: 'img58.jpg', title: 'image 01' },
+              { src: 'img59.jpg', srct: 'img59.jpg', title: 'image 01' },
+              { src: 'img60.jpg', srct: 'img60.jpg', title: 'image 01' },
+              { src: 'img61.jpg', srct: 'img61.jpg', title: 'image 01' },
+              { src: 'img62.jpg', srct: 'img62.jpg', title: 'image 01' },
+              { src: 'img63.jpg', srct: 'img63.jpg', title: 'image 01' },
+              { src: 'img64.jpg', srct: 'img64.jpg', title: 'image 01' },
+              { src: 'img65.jpg', srct: 'img65.jpg', title: 'image 01' },
+              { src: 'img66.jpg', srct: 'img66.jpg', title: 'image 01' },
+              { src: 'img67.jpg', srct: 'img67.jpg', title: 'image 01' },
+              { src: 'img68.jpg', srct: 'img68.jpg', title: 'image 01' },
+              { src: 'img69.jpg', srct: 'img69.jpg', title: 'image 01' },
+              { src: 'img70.jpg', srct: 'img70.jpg', title: 'image 01' },
+              { src: 'img71.jpg', srct: 'img71.jpg', title: 'image 01' },
+              { src: 'img72.jpg', srct: 'img72.jpg', title: 'image 01' },
+              { src: 'img73.jpg', srct: 'img73.jpg', title: 'image 01' },
+              { src: 'img74.jpg', srct: 'img74.jpg', title: 'image 01' },
+              { src: 'img75.jpg', srct: 'img75.jpg', title: 'image 01' },
+              { src: 'img76.jpg', srct: 'img76.jpg', title: 'image 01' },
+              { src: 'img77.jpg', srct: 'img77.jpg', title: 'image 01' },
+              { src: 'img78.jpg', srct: 'img78.jpg', title: 'image 01' },
+              { src: 'img79.jpg', srct: 'img79.jpg', title: 'image 01' }
+        		],
+            thumbnailWidth: 'auto',
+            thumbnailHeight: 250,
+            thumbnailGutterWidth : 0,
+            theme: 'light',
+            thumbnailGutterHeight : 0,
+            thumbnailHoverEffect: 'borderLighter,imageScaleIn80',
+            itemsBaseURL: './img/gallery/',
+        		locationHash: false,
+            i18n: { thumbnailImageDescription: 'View Photo', thumbnailAlbumDescription: 'Open Album' },
+            thumbnailLabel: { display: false, position: 'overImageOnMiddle', align: 'center' }
+          });
+      });
+
+  </script>
   <script type="text/javascript" src="js/main.js"></script>
-    <script type="text/javascript" src="js/gallery.js"></script>
 </head>
 
 <body>
-  <div class="message">
-    Sorry, your browser does not support CSS Grid. 😅
-  </div>
-  <div id="header">
-    <div class="navbar-cont">
-      <div>
-        <nav class="navbar fixed-top navbar-expand-lg navbar-dark" data-spy="affix" data-offset-top="100" style="background-color: black;">
-          <a class="navbar-brand color" style="color: #f7ff8d;" href="index.html">NESTY</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="nav">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="products.html">Products</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Gallery</a>
-
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Support</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
+  <nav id="global-nav" class="nav navbar navbar-expand-lg navbar-light bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+     <span class="navbar-toggler-icon"></span>
+   </button>
+    <div class="container-fluid collapse navbar-collapse" id="navbarTogglerDemo01">
+      <div  id="logo" class="pull-left"><a href="index.html" class=" navbar-brand responsive-image"><img src="img/logo.png" alt=""></a></div>
+      <div class="pull-right">
+        <ul class="nav-list navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item active"><a class="nav-link"  href="index.html"><div>Home</div></a></li>
+          <li class="nav-item"><a class="nav-link"  href="products.html"><div>Products</div></a></li>
+          <li class="nav-item"><a class="nav-link"  href="gallery.html"><div>Gallery</div></a></li>
+          <li class="nav-item"><a class="nav-link"  href="support.html"><div>Support</div></a></li>
+        </ul>
       </div>
-    </div>
   </div>
-  <section class="section">
-    <div class="img1">
-      <img id="myImg" src="https://www.w3schools.com/howto/img_snow.jpg" alt="Snow">
-      <div id="myModal" class="modal">
-        <span class="close">&times;</span>
-        <img class="modal-content" id="img01">
-        <div id="caption"></div>
-      </div>
-    </div>
-  </section>
+  </nav>
+  <div id="nanoGallery4"></div>
+
 </body>
 
 </html>
