@@ -33,14 +33,17 @@
   position: fixed;
   top: 0;
   z-index: 9999;
-  height: 150px;
+  height: 130px;
   width: 100%;
   background: #000 !important;
   color: #fff;
   padding-left: 50px;
   padding-right: 50px;
-  -webkit-transition: all 1.9s ease;
-  transition: all 1.9s ease;
+  -webkit-transition: all 0.9s ease;
+  transition: all 0.9s ease;
+}
+#mainCarousel{
+  margin-top: 13vh;
 }
 nav.navbar.shrink {
   height: 100px !important;
@@ -57,13 +60,20 @@ nav.navbar.shrink img{
   width: 180px !important;
 }
 .nav-list {
+  padding-right: 100px;
   list-style: none;
 }
-
 .nav-list li {
   list-style: none;
   display: inline-block;
   padding-left: 20px;
+}
+.nav-link{
+  font-size: 20px;
+  color: #EBFF82 !important;
+}
+.nav-link:hover{
+  color: red  !important;
 }
 .scrolled-nav {
   height: 60px !important;

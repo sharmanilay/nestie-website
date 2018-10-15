@@ -18,9 +18,9 @@
 			});
 			$(document).ready(function(){
 			  $(window).scroll(function(){
-			    if (window.pageYOffset >= 100) {
+			    if (window.pageYOffset >= 280) {
 			      $('#global-nav').addClass('shrink');
-			    } else if (window.pageYOffset < 100) {
+			    } else if (window.pageYOffset < 280) {
 			      $('#global-nav').removeClass('shrink');
 			    }
   		});
@@ -68,11 +68,11 @@
 							<div class="container-fluid collapse navbar-collapse" id="navbarTogglerDemo01">
 									<div  id="logo" class="pull-left"><a href="index.html" class=" navbar-brand responsive-image"><img src="img/logo.png" alt=""></a></div>
 									<div class="pull-right">
-										<ul class="nav-list">
-											<li class="nav-item active"><a href="index.html"><div>Home</div></a></li>
-											<li class="nav-item"><a href="products.html"><div>Products</div></a></li>
-											<li class="nav-item"><a href="#" data-scrollto="#gallery"><div>Gallery</div></a></li>
-											<li class="nav-item"><a href="support.html"><div>Support</div></a></li>
+										<ul class="nav-list navbar-nav mr-auto mt-2 mt-lg-0">
+											<li class="nav-item active"><a class="nav-link"  href="index.html"><div>Home</div></a></li>
+											<li class="nav-item"><a class="nav-link"  href="products.html"><div>Products</div></a></li>
+											<li class="nav-item"><a class="nav-link"  href="#" data-scrollto="#gallery"><div>Gallery</div></a></li>
+											<li class="nav-item"><a class="nav-link"  href="support.html"><div>Support</div></a></li>
 										</ul>
 									</div>
 							</div>
