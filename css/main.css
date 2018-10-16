@@ -28,28 +28,29 @@
   font-weight: normal;
   font-style: normal;
 }
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
 
 #global-nav {
   position: fixed;
   top: 0;
   z-index: 9999;
-  height: 130px;
+  height: 100px;
   width: 100%;
   background: #000 !important;
   color: #fff;
   padding-left: 50px;
   padding-right: 50px;
-  -webkit-transition: all 0.9s ease;
-  transition: all 0.9s ease;
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
 }
 .pull-right{
-  margin-left: 45% !important;
+  margin-left: 60% !important;
 }
 #mainCarousel{
-  margin-top: 13vh;
+  margin-top: 10vh;
 }
 nav.navbar.shrink {
-  height: 100px !important;
+  height: 60px !important;
 }
 #logo img{
   height: 80px;
@@ -57,8 +58,11 @@ nav.navbar.shrink {
   -webkit-transition: all 1.9s ease;
   transition: all 1.9s ease;
 }
-#nanoGallery4{
+.gallery{
   margin-top: 170px !important;
+}
+.imgContainer{
+  border: 50px!important;
 }
 
 nav.navbar.shrink img{
@@ -79,7 +83,10 @@ nav.navbar.shrink img{
   color: #EBFF82 !important;
 }
 .nav-link:hover{
-  color: red  !important;
+  color: #B08C00  !important;
+}
+.navbar-brand{
+  font-size: 45px;
 }
 .scrolled-nav {
   height: 60px !important;
@@ -94,10 +101,10 @@ body {
 
 a {
 	text-decoration: none !important;
-	color: #ed1c24;
+	color: #f7ff8d;
 }
 a:hover {
-	color: #222;
+	color: #B08C00;
 }
 a img {
 	border: none;
@@ -443,7 +450,7 @@ footer nav ul li a:hover {
 @media screen and (min-width: 62em) {
   .footer-menu {
     width: 18%;
-    float: right
+    float: left;
   }
 }
 
@@ -452,7 +459,6 @@ footer nav ul li a:hover {
   font-size: 16px;
   line-height: 15px;
   text-transform: uppercase;
-  opacity: 0.5;
   font-weight: 700;
   color: rgba(255, 255, 255, 0.7);
   padding-left: 2vw;
@@ -470,27 +476,33 @@ footer nav ul li a:hover {
 
 .footer-menu-item a, .footer-menu-item a:active, .footer-menu-item a:focus, .footer-menu-item a:visited {
   display: block;
-  color: #fff;
+  color: #EBFF82;
   font-size: 15px;
   text-decoration: none
+}
+.footer-menu-item a:hover{
+  color: #B08C00;
 }
 .contact-container {
   display: block;
   position: relative;
   top: -40px;
   font-size: 15px;
-  background:#D1F2EB;
+  background:#fff;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   padding: 20px;
   margin: 0 20px
 }
-
+.about-img{
+  margin-left: 10%;
+  width: 80%;
+}
 @media screen and (min-width: 62em) {
   .contact-container {
     width: 500px;
     margin: 0;
-    float: left
+    float: right;
   }
 }
 
@@ -538,7 +550,7 @@ footer nav ul li a:hover {
 @media screen and (min-width: 36em) {
   .contact-option {
     width: 50%;
-    float: left
+    float: right;
   }
 }
 
@@ -549,7 +561,7 @@ footer nav ul li a:hover {
 }
 
 .contact-option a:hover {
-  color: #54c3cb
+  color: #B08C00;
 }
 
 .contact-label {
