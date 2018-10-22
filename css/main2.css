@@ -459,6 +459,7 @@
 
 .card-subtitle {
   font-size: 10px;
+  padding-bottom: 4px;
   line-height: 15px;
   text-transform: uppercase;
   opacity: 0.5;

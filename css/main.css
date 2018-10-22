@@ -34,14 +34,14 @@
   position: fixed;
   top: 0;
   z-index: 9999;
-  height: 100px;
+  height: 95px;
   width: 100%;
   background: #000 !important;
   color: #fff;
   padding-left: 50px;
   padding-right: 50px;
-  -webkit-transition: all 0.7s ease;
-  transition: all 0.7s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 .pull-right{
   margin-left: 60% !important;
@@ -50,7 +50,7 @@
   margin-top: 10vh;
 }
 nav.navbar.shrink {
-  height: 60px !important;
+  height: 55px !important;
 }
 #logo img{
   height: 80px;

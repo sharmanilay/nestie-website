@@ -2,6 +2,16 @@
 #multiscroll{
   display: block;
 }
+.home-button{
+  margin-bottom: 140px !important;
+  color: #d4e6f1;
+  font-size: 3vh;
+  font-family: "raleway-regular", arial;
+  background-color: Transparent;
+}
+.home-link{
+  margin-left: 30%;
+}
 /*Earphones*/
 .ebutton{
     margin-left: 30%;
