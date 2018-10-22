@@ -40,8 +40,8 @@
   color: #fff;
   padding-left: 50px;
   padding-right: 50px;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
 .pull-right{
   margin-left: 60% !important;
