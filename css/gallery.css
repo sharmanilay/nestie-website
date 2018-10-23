@@ -7,6 +7,24 @@
   background-size: 100%, 100%;
   background-image: none;
 }
+@media only screen and (max-device-width: 1365px) {
+      .mobile {
+        padding: 100px 5px 0px 5px;
+        display: block;
+      }
+      .laptops {
+        display: none;
+      }
+    }
+
+ @media only screen and (min-device-width: 1366px) {
+      .mobile {
+        display: none;
+      }
+      .laptops{
+        display: block;
+      }
+    }
 
 .carousel-control-next-icon:after
 {
